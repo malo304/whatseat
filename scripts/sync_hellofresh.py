@@ -3,6 +3,7 @@
 Run periodically on a server or GitHub Actions; inspect resulting recipes.json.
 """
 import json, re, time, urllib.request, urllib.parse, xml.etree.ElementTree as ET
+from html import unescape
 from pathlib import Path
 from html.parser import HTMLParser
 ROOT='https://www.hellofresh.fr'
@@ -29,7 +30,7 @@ def nodes(obj):
   for key in ('@graph','mainEntity','itemListElement'):
    if key in obj:yield from nodes(obj[key])
 def text(v):
- if isinstance(v,str):return re.sub('<[^>]+>','',v).strip()
+ if isinstance(v,str):return unescape(re.sub('<[^>]+>','',v)).strip()
  if isinstance(v,dict):return text(v.get('text') or v.get('name') or '')
  return ''
 def duration(v):
@@ -83,7 +84,12 @@ def main():
   except Exception:pass
  recipes={r['url']:r for r in existing if r.get('url')};found=discover();print('URLs publiques trouvées:',len(found))
  for i,url in enumerate(found):
-  if url in recipes:continue
+  if url in recipes:
+   old=recipes[url]
+   old['title']=unescape(old.get('title',''))
+   for ing in old.get('items',[]):ing['name']=unescape(ing.get('name',''))
+   for step in old.get('steps',[]):step['text']=unescape(step.get('text',''))
+   continue
   try:
    r=parse_recipe(url)
    if r:recipes[url]=r;print('Recette',i+1,r['title'])
