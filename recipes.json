@@ -112,7 +112,9 @@
           "text": "Coupez la burrata en 4. \nServez les linguine au potimarron dans des assiettes creuses.\nSaupoudrez de persil ciselé et d'amandes effilées, puis répartissez les morceaux de burrata. Salez, poivrez et versez un filet d'huile d'olive sur le tout.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 902,
+      "protein": 27.1
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-poulet-et-pommes-de-terre-au-pesto-5afbf80830006c54c636b1d2",
@@ -206,7 +208,9 @@
           "text": "Incorporez le reste de pesto vert aux pommes de terre. Disposez les pommes de terre et le filet de poulet sur les assiettes et accompagnez le tout de la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 700,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pains-pita-fourres-a-litalienne-5afbf80cae08b557e41771d2",
@@ -295,7 +299,9 @@
           "text": "Servez les pains pita sur les assiettes.\nÀ table, chacun garnit le sien avec la salade aux tomates et au bœuf et le mélange à l’iceberg. Accompagnez le tout de patates douces.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 901,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/des-de-cuisse-de-poulet-et-pesto-aux-champignons-des-bois-5afbfdf530006c5916524ad2",
@@ -374,7 +380,9 @@
           "text": "Ajoutez le pesto aux champignons des bois, puis salez et poivrez éventuellement. Servez le plat sur les assiettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 715,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/crevettes-nouilles-et-haricots-verts-5afbfdf930006c58c8456d42",
@@ -458,7 +466,9 @@
           "text": "Servez le plat sur les assiettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 505,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/sandwich-au-boeuf-et-au-poivron-roti-5afbfe04ae08b55c7b1591b2",
@@ -557,7 +567,9 @@
           "text": "Ouvrez les baguettes et tartinez-les de moutarde à votre guise. Garnissez avec le poivron, l’émincé de bœuf et les échalotes, puis parsemez de danablu. Servez les sandwichs au bœuf sur les assiettes et accompagnez du mesclun.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 810,
+      "protein": 41.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/fettuccine-cremeuses-au-brocoli-5afbfe0630006c58f9611122",
@@ -648,7 +660,9 @@
           "text": "• Servez les pâtes sur les assiettes. \n• Garnissez avec le reste de chèvre et les noix",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 805,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/shawarma-de-poulet-et-salade-de-semoule-5afbfe07ae08b55c676b31c4",
@@ -744,7 +758,9 @@
           "text": "•\tServez les pains pita sur les assiettes.\n•\tLaissez chacun les garnir avec le shawarma de poulet, la salade mixte et la sauce à l’ail.\n•\tAccompagnez le tout de la salade de couscous.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 901,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/asperges-blanches-et-sauce-gribiche-5afbfe0930006c5916524ad4",
@@ -833,7 +849,9 @@
           "text": "Servez les pommes de terre sur les assiettes. Présentez les asperges en rang, disposez l’œuf mollet par-dessus et coupez-le en deux pour que le jaune puisse couler sur les asperges. Accompagnez de la sauce gribiche.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 727,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/risotto-au-mascarpone-et-a-la-saucisse-de-porc-epicee-5afbfe8030006c593c009ca2",
@@ -937,7 +955,9 @@
           "text": "Ajoutez le mascarpone et la majeure partie du grana padano au risotto, puis salez et poivrez. Servez le risotto dans des assiettes creuses et parsemez du reste de grana padano. Accompagnez le tout de la salade de fenouil et décorez avec les fanes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 753,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-couscous-perle-au-maquereau-fume-5afbfe8430006c59487827c2",
@@ -1031,7 +1051,9 @@
           "text": "Servez la salade sur les assiettes et garnissez avec le reste de maquereau fumé et de noisettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 874,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/boulettes-de-boeuf-et-sauce-tomate-piquante-5afbfe85ae08b55c8d689a82",
@@ -1135,7 +1157,9 @@
           "text": "Goûtez la semoule, ajoutez de l’huile d’olive vierge extra à votre guise et rectifiez l’assaisonnement si nécessaire. Servez la semoule aux herbes avec les boulettes dans leur sauce tomate.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 770,
+      "protein": 45.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/riz-et-champignons-blonds-dans-une-sauce-soja-sucree-5afbfe8a30006c595b545892",
@@ -1249,7 +1273,9 @@
           "text": "Servez les champignons avec le riz basmati, les œufs au plat et les brocolis rôtis. Parsemez de graines de sésame et de persil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 933,
+      "protein": 31.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-poulet-au-thym-et-au-citron-cuit-au-four-5afbfe8cae08b55cbe2d9b83",
@@ -1338,7 +1364,9 @@
           "text": "Servez le filet de poulet au thym et au citron avec les grenailles et les haricots.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 657,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pitas-au-poulet-epice-et-salade-5afbfe8fae08b55c6f3928a2",
@@ -1424,7 +1452,9 @@
           "text": "•\tServez les pains pita à table et laissez chacun garnir le sien à sa guise avec le reste de mini-romaine, le poulet et la sauce au yaourt et au tahini.\n\n•\tAccompagnez le tout de la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 776,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pates-a-la-creme-et-boulettes-de-poulet-hache-5b03d0b030006c062b554592",
@@ -1523,7 +1553,9 @@
           "text": "Servez les pâtes sur les assiettes et accompagnez-les des boulettes et de la sauce à la crème. Garnissez avec le reste d’herbes fraîches et ajoutez un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 795,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/taboule-au-filet-de-porc-emince-5b03d0b4ae08b5098407b932",
@@ -1627,7 +1659,9 @@
           "text": "Servez le taboulé sur les assiettes et garnissez avec le filet de porc et le reste d’herbes fraîches.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 723,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gnocchis-au-four-aux-brocolis-5b03d0b830006c05881adc72",
@@ -1711,7 +1745,9 @@
           "text": "Servez le plat sur les assiettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 951,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/burgers-de-poulet-epices-et-naan-5b03d0baae08b5095315f753",
@@ -1810,7 +1846,9 @@
           "text": "Garnissez deux morceaux de naan avec un burger de poulet et une cuillérée de raïta. Repliez les naans en deux autour du burger. Vous pouvez aussi les faire tenir avec des mini-brochettes ou les coupez en quatre pour avoir un dessus et un dessous. Servez les burgers dans les naan sur les assiettes, disposez l’aubergine à côté et garnissez-la avec la coriandre et les oignons jeunes. Accompagnez le tout du reste de raïta.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 733,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pitas-aux-falafels-et-sauce-yazzara-5b03d0bb30006c05f51a0d04",
@@ -1901,7 +1939,9 @@
           "text": "•\tPrésentez tous les ingrédients à table dans des bols pour que chacun puisse garnir ses pitas à sa guise avec de la mini-romaine, du poivron et des falafels. Garnissez avec la feta et accompagnez du reste de yazzara.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 978,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/cheeseburger-a-la-tomate-et-au-fromage-vieux-5b0bb2b730006c47d07bd8b4",
@@ -2005,7 +2045,9 @@
           "text": "Servez les burgers avec les quartiers de pommes de terre, le reste de salade et la mayonnaise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 992,
+      "protein": 40.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-pommes-de-terre-et-truite-fumee-5b0bb2ba30006c47d44d8042",
@@ -2089,7 +2131,9 @@
           "text": "Servez la salade de pommes de terre sur les assiettes et garnissez avec le reste de truite et d’aneth.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 598,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/patates-douces-et-tomates-cerises-au-four-5b0bb2c030006c47ca7d0d35",
@@ -2183,7 +2227,9 @@
           "text": "Servez les patates douces et les tomates sur les assiettes, puis disposez les œufs au plat par-dessus délicatement. Garnissez ces derniers avec le persil et disposez la salade de bimis à côté.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 600,
+      "protein": 19.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-cabillaud-et-mayonnaise-a-la-ciboulette-5b0bb2c4ae08b55489378bf2",
@@ -2264,7 +2310,9 @@
           "text": "• Mélangez le beurre et l’ail avec les grenailles. \n• Servez les grenailles à l’ail avec les brocolis, le filet de cabillaud et la mayonnaise à la ciboulette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 833,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/mijote-de-veau-en-croute-5b0bb2c630006c47d07bd8b7",
@@ -2368,7 +2416,9 @@
           "text": "Servez la salade sur les assiettes et garnissez avec les pistaches. Servez un fond de pâte feuilletée au mijoté de veau sur chaque assiette. Disposez le reste de viande à côté et garnissez avec le reste de cerfeuil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 730,
+      "protein": 41.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-aux-crevettes-et-au-fenouil-5b14e984ae08b527857456a2",
@@ -2462,7 +2512,9 @@
           "text": "Servez l’orzo sur les assiettes, disposez les crevettes par-dessus et garnissez avec les fanes de fenouil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 609,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/poulet-cocotte-aux-lardons-5b14e98630006c122f6c9244",
@@ -2556,7 +2608,9 @@
           "text": "Servez le plat sur des assiettes creuses.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 732,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/portobello-au-fromage-de-chevre-cuit-au-four-5b14e987ae08b527cc2af7d2",
@@ -2650,7 +2704,9 @@
           "text": "Servez les pommes de terre et les portobellos sur les assiettes et accompagnez-les des légumes cuits au four. Versez un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 684,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-couscous-au-chevre-frais-et-aux-herbes-5b14e98b30006c123d0be422",
@@ -2754,7 +2810,9 @@
           "text": "Servez la salade de couscous sur les assiettes. Émiettez le chèvre par-dessus et garnissez avec les amandes salées et le reste de persil plat et de mélisse citronnelle. Servez le tout avec le reste de jus de citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 857,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/boulettes-suedoises-et-sauce-aux-airelles-5b14e98fae08b527d46e09f2",
@@ -2858,7 +2916,9 @@
           "text": "Servez la purée de pommes de terre et les brocolis sur les assiettes. Ajoutez-y les boulettes, puis versez de la sauce sur les boulettes et les brocolis. Garnissez avec le reste de persil plat",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 752,
+      "protein": 44.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-nouilles-au-curry-5b14e99130006c1255447663",
@@ -2944,7 +3004,9 @@
           "text": "•\tServez la soupe dans les bols. Garnissez avec la coriandre et les cacahuètes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 743,
+      "protein": 18.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pintade-confite-et-puree-de-pommes-de-terre-5b14e99330006c122f6c9247",
@@ -3048,7 +3110,9 @@
           "text": "Coupez les extrémités dures de la little gem. Servez la sauce dans des assiettes creuses et versez la purée de pommes de terre par-dessus. Disposez la pintade sur le tout et accompagnez de la little gem étuvée. Parsemez de noisettes ainsi que du reste de ciboulette et d’estragon.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 984,
+      "protein": 41.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/fettuccine-aux-chipolatas-5b1a8f7030006c29c21252a2",
@@ -3167,7 +3231,9 @@
           "text": "Servez le plat de pâtes sur les assiettes, puis garnissez avec le basilic et le reste de poivron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 818,
+      "protein": 46.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/nouilles-et-maquereau-fume-a-chaud-5b1a8f7330006c2a10301b63",
@@ -3266,7 +3332,9 @@
           "text": "Servez le plat sur les assiettes et garnissez du reste de maquereau et de mélange cacahuètes-noix de coco.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 856,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-grenailles-au-chevre-et-aux-oeufs-5b1a8f7630006c2a2e490d22",
@@ -3370,7 +3438,9 @@
           "text": "Répartissez la salade sur les assiettes, émiettez le chèvre frais par-dessus et parsemez de noisettes. Servez le tout avec le reste de vinaigrette et ajoutez éventuellement du jus d’orange selon votre goût.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 758,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/couscous-perle-aux-pois-chiches-croquants-et-a-la-feta-5b1a8f78ae08b5417f0cc842",
@@ -3479,7 +3549,9 @@
           "text": "Servez le couscous perlé dans un bol ou sur une assiette creuse. Garnissez avec les pois chiches, le vert des oignons jeunes et le reste de feta.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 899,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/minestrone-a-litalienne-5b1a8f7930006c29dd4c43b3",
@@ -3588,7 +3660,9 @@
           "text": "Versez la soupe dans les bols et garnissez de basilic. Accompagnez le tout de la ciabatta.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 699,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/saucisse-de-porc-brandt-and-levie-et-patatas-bravas-5b1a8f7bae08b54179678962",
@@ -3672,7 +3746,9 @@
           "text": "Servez la saucisse avec les patatas bravas et les carottes. Garnissez les carottes avec le persil et accompagnez de l’aïoli.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 872,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/quesadilla-aux-legumes-et-au-cheddar-5b1a8f7c30006c2a0c088f83",
@@ -3763,7 +3839,9 @@
           "text": "•\tDécoupez les quesadillas en pointes et servez-les sur les assiettes.\n•\tAccompagnez d'un quartier de citron vert et de la mayonnaise au citron vert\npour saucer.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 955,
+      "protein": 23.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-chaude-de-pommes-de-terre-a-la-truite-fumee-5b1a8f7dae08b5410d789732",
@@ -3854,7 +3932,9 @@
           "text": "•\tDans le saladier, mélangez la vinaigrette à l’aneth, la little gem, les grenailles, le poivron, l'oignon et la truite fumée.\n•\tServez sur les assiettes et arrosez de jus de citron selon votre goût.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 576,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-poulet-en-croute-de-noix-5b1a8f7f30006c29dd4c43b6",
@@ -3968,7 +4048,9 @@
           "text": "Servez les fettuccine sur les assiettes et disposez le filet de poulet par-dessus. Accompagnez le tout de la salade caprese.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1109,
+      "protein": 51.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-poulet-et-salade-riche-en-couleurs-5b23c7b530006c04f10c3fd2",
@@ -4067,7 +4149,9 @@
           "text": "Servez la salade sur les assiettes et disposez le filet de poulet par-dessus. Accompagnez des pommes de terre sautées.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 828,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/grenailles-au-boeuf-hache-epice-5b23c7baae08b51f0745b183",
@@ -4141,7 +4225,9 @@
           "text": "Servez le plat sur les assiettes et garnissez avec le reste de persil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 822,
+      "protein": 40.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/ciabatta-et-eminces-de-filet-de-porc-au-beurre-dherbes-5b23c7c0ae08b51efa3e0ba2",
@@ -4250,7 +4336,9 @@
           "text": "Ouvrez la ciabatta. Déposez-y quelques feuilles de little gem, puis disposez le porc émincé et la graisse de cuisson par-dessus. Disposez les autres feuilles de little gem l’une sur l’autre (en bateau) et versez la vinaigrette par-dessus. Garnissez la little gem avec les lardons rissolés.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 541,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/tortillas-au-shawarma-de-dinde-5b23c7c2ae08b51e9d421ef2",
@@ -4336,7 +4424,9 @@
           "text": "•\tServez les tortillas au shawarma sur les assiettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 950,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/galettes-de-pommes-de-terre-et-saumon-fume-a-chaud-5b23c7c430006c052076f9a3",
@@ -4460,7 +4550,9 @@
           "text": "Servez les galettes de pommes de terre sur les assiettes et disposez les morceaux de saumon par-dessus. Alternez avec des touches de crème aigre et accompagnez le tout de la salade. Parsemez de ciboulette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1031,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/oiseau-sans-tete-et-gratin-de-pomme-de-terre-5b309fd530006c6efa69a5b2",
@@ -4554,7 +4646,9 @@
           "text": "Servez le gratin de pommes de terre et l’oiseau sans tête aux oignons sur les assiettes. Accompagnez des carottes (avec leur jus) et garnissez avec le persil plat.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 923,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/risotto-a-la-courgette-et-a-la-mozzarella-de-bufflonne-5b309fd6ae08b50edf18b792",
@@ -4658,7 +4752,9 @@
           "text": "Servez le risotto sur les assiettes, puis garnissez avec le reste de feuilles de basilic et le grana padano.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 771,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/papillote-de-cabillaud-au-fenouil-et-a-laneth-5b309fd730006c6eff548af2",
@@ -4762,7 +4858,9 @@
           "text": "Servez les quartiers de pomme de terre ainsi que les papillotes sur les assiettes et accompagnez le tout de la salade de concombre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 620,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-boulgour-et-de-lentilles-au-bleu-5b309fdbae08b50e9a107b22",
@@ -4861,7 +4959,9 @@
           "text": "Servez la salade sur les assiettes. Versez l’oignon rouge et les amandes par-dessus, puis garnissez avec le reste de danablu et d’avocat.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 707,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-pommes-de-terre-froide-et-pilons-de-poulet-5b309fdeae08b50f01123a22",
@@ -4945,7 +5045,9 @@
           "text": "Servez la salade de pommes de terre froide avec les poivrons poêlés et les pilons de poulet. Garnissez avec le reste de ciboulette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 758,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gyros-de-poulet-et-taboule-epice-5b362c9130006c53257927c2",
@@ -5049,7 +5151,9 @@
           "text": "Disposez trois feuilles de little gem par personne sur chaque assiette Servez le taboulé au gyros dedans et présentez le reste à côté.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 588,
+      "protein": 35.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-nouilles-a-la-noix-de-coco-et-aux-sugar-snaps-5b362c93ae08b56ef5195862",
@@ -5153,7 +5257,9 @@
           "text": "Versez la soupe à la noix de coco dans les bols. Coupez les œufs dans le sens de la longueur et déposez-les sur la soupe.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 748,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/risotto-dorzo-au-filet-de-sebaste-5b362c9430006c53516f4853",
@@ -5257,7 +5363,9 @@
           "text": "Servez le risotto d’orzo sur les assiettes, puis arrosez d’un filet d’huile d’olive vierge extra si vous le souhaitez. Disposez le filet de sébaste par-dessus, côté peau vers le haut. Saupoudrez de 1/2 cc de zeste de citron par personne, puis disposez 2 demi-rondelles sur chaque morceau de poisson. Garnissez enfin le tout de lardons.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 749,
+      "protein": 38.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-grenailles-au-mais-et-aux-lardons-5b362c95ae08b56ef610dfd2",
@@ -5361,7 +5469,9 @@
           "text": "Servez la salade de grenailles sur les assiettes et garnissez avec la vinaigrette au yaourt. Garnissez le tout avec les échalotes aigres-douces.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 749,
+      "protein": 18.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/lasagnes-de-legumes-fondantes-aux-epinards-5b362c9630006c535b76e472",
@@ -5465,7 +5575,9 @@
           "text": "Terminez les lasagnes par une couche de sauce et saupoudrez de grana padano. Enfournez les lasagnes 20 minutes, puis servez sur les assiettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 933,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/riz-saute-avec-un-oeuf-au-plat-5b362c97ae08b56ef3423ba2",
@@ -5574,7 +5686,9 @@
           "text": "Servez le riz dans les bols. Disposez l’œuf au plat par-dessus et garnissez avec les noix de cajou, les graines de sésame et le vert des oignons jeunes. Arrosez de jus de citron vert à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 876,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/aubergine-cuite-lentement-5b362c9930006c534f324582",
@@ -5668,7 +5782,9 @@
           "text": "Servez le riz sur les assiettes et garnissez avec la menthe. Disposez l’aubergine à côté et garnissez-la avec la feta et les graines de grenade. Accompagnez le tout de la sauce au yaourt et au tahini.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 869,
+      "protein": 20.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/sauce-tomate-a-lorientale-et-boeuf-hache-5b362c9aae08b56f0e767e52",
@@ -5777,7 +5893,9 @@
           "text": "Servez la purée sur les assiettes. Versez la sauce tomate autour et disposez le bœuf par-dessus. Garnissez le tout avec la menthe.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 860,
+      "protein": 44.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/couscous-perle-aux-champignons-et-au-gruyere-5b362c9c30006c53293f26c2",
@@ -5853,7 +5971,9 @@
           "text": "• Servez le couscous perlé sur les assiettes, puis garnissez avec les noix et le reste de gruyère.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 658,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/bami-au-poulet-5-epices-5b362c9cae08b56ee02d9562",
@@ -5924,7 +6044,9 @@
           "text": "•\tServez le plat sur les assiettes et ajoutez éventuellement de la sauce soja sucrée à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 652,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-mozzarella-de-bufflonne-et-jambon-serrano-5b362c9e30006c536545dec3",
@@ -6043,7 +6165,9 @@
           "text": "Servez la salade avec les crostinis et parsemez avec les câpres croustillantes, les éventuelles fanes de fenouil, la menthe et les noix.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1128,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/patatas-bravas-et-merguez-de-boeuf-5b3f798c30006c349b1ec382",
@@ -6132,7 +6256,9 @@
           "text": "Servez les piments salés et les merguez sur les assiettes. Accompagnez-les des patatas bravas, de la sauce tomate piquante et d’une bonne cuillérée d’aïoli.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 845,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/farfalle-cremeuse-au-hache-de-poulet-epice-5b3f7990ae08b553655adcf2",
@@ -6226,7 +6352,9 @@
           "text": "Servez les pâtes sur les assiettes et garnissez avec le reste de fromage mi-vieux.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 813,
+      "protein": 42.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/curry-depinards-et-de-patates-douces-oeuf-au-plat-et-yaourt-5b3f799130006c34d40498d2",
@@ -6340,7 +6468,9 @@
           "text": "Servez le riz sur les assiettes, puis disposez le curry et l’œuf par-dessus. Garnissez avec le yaourt et la coriandre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 648,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/risotto-a-la-mozzarella-de-bufflonne-5b3f7993ae08b553ca7cc8f3",
@@ -6444,7 +6574,9 @@
           "text": "Servez le risotto sur les assiettes, parsemez de piment rouge et du reste de pecorino. Assaisonnez avec le reste d’huile au basilic.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 680,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/tortillas-falafels-et-feta-5b3f799430006c34c81e0363",
@@ -6533,7 +6665,9 @@
           "text": "Tartinez la sauce au yaourt et au houmous sur les tortillas. Disposez les tranches de tomate et de courgette dessus, terminez par les falafels. Garnissez avec la feta et la menthe, puis salez et poivrez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 824,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/ramen-au-cabillaud-a-la-japonaise-5b3f7998ae08b553e42c2862",
@@ -6619,7 +6753,9 @@
           "text": "• Assaisonnez la soupe avec la sauce soja et du poivre.\n• Servez le ramen dans les bols et disposez le cabillaud par-dessus.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 503,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-mignon-de-porc-et-gratin-dete-5b3f799a30006c34c902bf83",
@@ -6723,7 +6859,9 @@
           "text": "Servez le gratin de pommes de terre et de tomate sur des assiettes creuses et accompagnez du filet mignon. Saupoudrez le gratin de basilic, puis émiettez le jambon sur le gratin et le filet mignon. Si vous le souhaitez arrosez la viande avec la graisse de cuisson restée dans le plat à four.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 938,
+      "protein": 42.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-tiede-a-la-truite-fumee-5b48b692ae08b5752d1c7792",
@@ -6812,7 +6950,9 @@
           "text": "Servez la salade sur les assiettes et disposez la truite dessus. Garnissez avec le reste de cresson.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 657,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/linguine-au-beurre-aux-anchois-5b48b696ae08b574c76935f5",
@@ -6901,7 +7041,9 @@
           "text": "Servez les pâtes sur les assiettes et parsemez des amandes ainsi que du reste de persil et d’estragon.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 792,
+      "protein": 23.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/aubergine-au-four-et-rigatoni-5b48b69bae08b57522434112",
@@ -7010,7 +7152,9 @@
           "text": "Servez les rigatoni sur les assiettes et disposez l’aubergine gratinée par-dessus. Ciselez le basilic frais et garnissez-en le plat. Accompagnez le tout de la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 743,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/bouillon-legerement-piquant-aux-boulettes-5b48b69eae08b57567038403",
@@ -7109,7 +7253,9 @@
           "text": "Servez les nouilles sur les assiettes, versez le bouillon aux boulettes par-dessus. Ajoutez de la sauce soja à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 606,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/chawarma-de-poulet-et-salade-de-couscous-5b48b6a1ae08b5754b458415",
@@ -7205,7 +7351,9 @@
           "text": "• Servez les pains pita sur les assiettes.\n• Laissez chacun les garnir avec le chawarma de poulet, le mélange de salades et la sauce à l’ail.\n• Accompagnez le tout de la salade de couscous.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 909,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-de-chicoree-et-boulettes-de-viande-5b558670ae08b5446c27f3c2",
@@ -7299,7 +7447,9 @@
           "text": "Servez la purée de chicorée sur les assiettes et garnissez avec l’oignon rouge. Accompagnez des boulettes et arrosez-les du jus de viande de la poêle.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 975,
+      "protein": 49.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/couscous-perle-aux-oignons-poeles-5b558671ae08b545070acdc2",
@@ -7398,7 +7548,9 @@
           "text": "Servez le couscous sur les assiettes et garnissez avec le reste de ricotta au citron. Parsemez du reste de cerfeuil, d’estragon et du reste de zeste de citron à votre guise. Arrosez avec le reste de jus de citron si le goût vous en dit.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 709,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/quinoa-au-chou-fleur-et-cuisse-de-poulet-emincee-au-ras-el-hanout-5b558674ae08b545242dde44",
@@ -7497,7 +7649,9 @@
           "text": "Servez le quinoa au chou-fleur sur les assiettes, disposez la courgette à côté et garnissez avec la menthe. Accompagnez de la sauce au yaourt piquante et du reste de jus de citron vert à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 824,
+      "protein": 40.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-au-brocoli-et-a-la-courgette-et-ciabatta-aux-olives-5b558676ae08b544805abf32",
@@ -7586,7 +7740,9 @@
           "text": "Versez la soupe dans les bols. Garnissez avec le reste de crème fraîche et les rubans de courgette, puis parsemez avec les graines de courge grillées et ajoutez du poivre si vous le souhaitez. Accompagnez le tout de la ciabatta aux olives.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 621,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/feta-au-four-a-lorzo-5b558678ae08b544f95b4742",
@@ -7680,7 +7836,9 @@
           "text": "Servez l’orzo sur les assiettes et disposez la feta par-dessus. Accompagnez du poivron et parsemez du reste de basilic.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 860,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/poulet-hache-a-la-vietnamienne-dans-une-little-gem-5b55867aae08b5450e78f4d2",
@@ -7809,7 +7967,9 @@
           "text": "Servez les nouilles et les carottes sur les assiettes. Disposez le poulet par-dessus et garnissez avec la menthe et la coriandre. Présentez les sauces séparément pour que chacun puisse en ajouter à sa guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 650,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/linguine-aux-tomates-cerises-aux-capres-et-aux-olives-5b55867bae08b545070acdc3",
@@ -7885,7 +8045,9 @@
           "text": "•\tHors du feu, remuez bien une dernière fois, puis salez et poivrez.\n•\tServez les linguine sur les assiettes.\n•\tGarnissez avec la feta et le reste de persil et surtout, n’oubliez pas de retirer les gousses d’ail.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 543,
+      "protein": 19.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pita-au-boeuf-hache-epice-a-lorientale-5b55867cae08b5451e21d3e3",
@@ -7976,7 +8138,9 @@
           "text": "• Présentez le houmous avec le bœuf, la salade, le reste de jus de citron et les pitas sur la table pour que chacun puisse garnir son petit pain. Commencez par un peu de salade fraîche, puis ajoutez le bœuf et le houmous.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 998,
+      "protein": 50.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/burger-de-luxe-et-quartiers-de-pommes-de-terre-5b55867dae08b544805abf34",
@@ -8100,7 +8264,9 @@
           "text": "Ouvrez les pains rosette. Disposez le burger de veau et les oignons par-dessus Ajoutez ensuite l’oeuf au plat, puis le reste de lard. Servez les burgers avec les pommes de terre, la mayonnaise et la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1139,
+      "protein": 51.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-thon-et-de-pommes-de-terre-opperdoezer-ronde-5b5f000d30006c06664d3393",
@@ -8189,7 +8355,9 @@
           "text": "Mélangez la salade à la vinaigrette et servez le plat sur les assiettes, puis versez éventuellement le reste d’huile d’olive du thon.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 503,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gyros-de-poulet-facon-kebab-5b5f000f30006c0625663cf2",
@@ -8278,7 +8446,9 @@
           "text": "Dans un kebab, tous les ingrédients sont empilés : servez les frites sur les assiettes. Disposez la salade par-dessus, puis le gyros de poulet. Versez enfin la mayonnaise à l’ail sur le tout. Si vous préférez que les frites restent croustillantes, disposez la salade et le gyros à côté des frites. Accompagnez le tout de la mayonnaise à l’ail.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 806,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pizza-a-litalienne-sur-pain-plat-avec-de-la-mozzarella-de-bufflonne-5b5f001130006c07143a5df2",
@@ -8377,7 +8547,9 @@
           "text": "Servez les pizzas sur les assiettes et arrosez d’un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 725,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-deglefin-et-sauce-a-la-ciboulette-5b5f001330006c063b319ba4",
@@ -8461,7 +8633,8 @@
           "text": "Servez les carottes et les pommes de terre sur les assiettes, disposez le filet d’églefin par-dessus et accompagnez de sauce à la ciboulette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 584
     },
     {
       "id": "https://www.hellofresh.fr/recipes/plat-dete-de-gnocchis-et-merguez-5b5f001530006c06ff3d1482",
@@ -8555,7 +8728,9 @@
           "text": "Servez les gnocchis sur les assiettes et accompagnez-les des merguez. Garnissez du reste de zeste et de jus de citron à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 898,
+      "protein": 43.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-mignon-de-porc-aux-orecchiette-5b5f002330006c0625663cf4",
@@ -8669,7 +8844,9 @@
           "text": "Sur chaque assiette, faites un nid avec la roquette et servez les orecchiette pardessus. Disposez les tranches de filet de porc sur les pâtes et parsemez de sel et de poivre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 849,
+      "protein": 43.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gyros-et-boulgour-a-la-mediterraneenne-5b645d7bae08b57e59605783",
@@ -8768,7 +8945,9 @@
           "text": "Servez le boulgour sur les assiettes et disposez le gyros dessus. Versez un filet d’huile d’olive vierge extra si vous le souhaitez et garnissez le tout avec le lebné.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 691,
+      "protein": 46.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-tomate-et-de-poivron-a-lestragon-5b645d7dae08b57e976ca042",
@@ -8872,7 +9051,9 @@
           "text": "Versez la soupe dans les bols, puis garnissez avec le grana padano, le reste de crème aigre et l’estragon. Servez avec les gressins.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 700,
+      "protein": 20.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-deglefin-au-citron-et-au-lard-5b645d7fae08b57e4d50f743",
@@ -8966,7 +9147,9 @@
           "text": "Servez l’églefin avec la purée aux épinards et les quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 679,
+      "protein": 31.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pad-thai-poulet-nouilles-et-oeufs-brouilles-5b645d81ae08b57e976ca043",
@@ -9075,7 +9258,9 @@
           "text": "Servez les nouilles, le poulet et les légumes sur les assiettes, disposez les oeufs brouillés par-dessus et parsemez de coriandre et de cacahuètes. Accompagnez le tout de quartiers de citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 841,
+      "protein": 47.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/cuisse-de-poulet-sauce-a-la-noix-de-coco-et-pak-choi-5b645d89ae08b57e4669e502",
@@ -9174,7 +9359,9 @@
           "text": "Servez le riz sur les assiettes, disposez le pak-choï à côté et garnissez avec les graines de sésame. Posez le poulet au lait de coco sur le riz.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 478,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/rigatoni-aux-brocolis-et-lardons-5b645d8dae08b57e3f49ccd2",
@@ -9250,7 +9437,9 @@
           "text": "• Servez les rigatoni et les brocolis sur les assiettes.\n• Garnissez avec le fromage mi-vieux et le reste de persil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 881,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-saumon-poele-garni-de-salicornes-5b645d8eae08b57e976ca044",
@@ -9349,7 +9538,9 @@
           "text": "Servez les grenailles sur les assiettes, disposez le fenouil à côté et posez le filet de saumon par-dessus. Disposez les salicornes sur le saumon et garnissez le plat avec l’aneth. Accompagnez le tout de la mayonnaise au citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 964,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/bar-a-la-poele-et-beurre-a-la-sauge-5b6d9290ae08b5432742d2e3",
@@ -9443,7 +9634,9 @@
           "text": "Accompagnez le filet de bar des pommes de terre épicées, du poireau et des tomates cerises. Arrosez avec la sauce au beurre qui reste dans la poêle.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 615,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/conchiglie-pesto-rouge-et-feta-5b6d9294ae08b542f61cdbb2",
@@ -9537,7 +9730,9 @@
           "text": "Servez la roquette et les conchiglie sur les assiettes. Arrosez avec la vinaigrette et garnissez le plat avec la feta et le basilic.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 822,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-deglefin-aux-lentilles-et-lardons-5b6d9297ae08b5430555aee2",
@@ -9621,7 +9816,9 @@
           "text": "Servez les lentilles aux légumes sur des assiettes creuses et déposez le sur le dessus du filet d’églefin.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 544,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/lasagne-de-legumes-et-sauce-a-la-creme-maison-5b6d929bae08b5430555aee4",
@@ -9725,7 +9922,9 @@
           "text": "Laissez la lasagne refroidir 3 minutes avant de servir pour qu’elle se raffermisse. Enfin, servez la lasagne sur les assiettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 899,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/legumes-a-la-sauce-soja-sucree-et-oeuf-au-plat-5b6d929dae08b543687187a3",
@@ -9839,7 +10038,9 @@
           "text": "Servez le riz et les légumes sur les assiettes. Accompagnez des œufs au plat. Parsemez de graines de sésame et de persil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 956,
+      "protein": 35.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-tomate-et-petit-pain-chaud-a-la-mozzarella-de-bufflonne-5b6d929fae08b542f341fb12",
@@ -9948,7 +10149,9 @@
           "text": "Versez la soupe dans les bols. Versez un filet d’huile d’olive vierge extra si vous le souhaitez et garnissez avec la moitié du basilic, puis salez et poivrez. Soulevez délicatement la moitié supérieure de la ciabatta, parsemez du reste de basilic, puis refermez. Servez le petit pain chaud avec la soupe.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 603,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/banh-mi-aux-boulettes-de-viande-5b6d92a1ae08b542f50191b2",
@@ -10062,7 +10265,9 @@
           "text": "Servez le bánh mì avec le reste de salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 935,
+      "protein": 41.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-haricots-croutons-et-oeuf-au-plat-5b6d92a3ae08b5437627c532",
@@ -10153,7 +10358,9 @@
           "text": "•\tRéservez les croûtons hors de la poêle.\n•\tChauffez le reste d’huile d’olive dans la poêle et préparez 1 œuf au plat par personne.\n•\tDans le saladier, mélangez la roquette et la mâche, les haricots blancs, les haricots verts, la tomate prune et les croûtons. Garnissez avec l’œuf au plat et la vinaigrette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 792,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/poulet-piccata-asperges-vertes-et-linguine-5b6d92a6ae08b542da0d5de4",
@@ -10267,7 +10474,9 @@
           "text": "Servez les linguine sur les assiettes et disposez les asperges vertes à côté. Disposez le poulet sur les pâtes et garnissez avec le reste de persil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 817,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pizza-sur-pain-plat-au-thon-5b76db60ae08b52354685ea2",
@@ -10356,7 +10565,9 @@
           "text": "Garnissez les pizzas avec la roquette, puis servez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 711,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/portobello-au-fromage-de-chevre-cuit-au-four-5b76db64ae08b52363532744",
@@ -10450,7 +10661,9 @@
           "text": "Servez les pommes de terre et les portobellos sur les assiettes et accompagnez-les des légumes au four. Versez un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 684,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-au-panais-a-la-pomme-et-a-la-truite-fumee-5b76db66ae08b523ce09d3f3",
@@ -10549,7 +10762,9 @@
           "text": "Servez la soupe sur des assiettes creuses ou dans des bols. Disposez la truite fumée et la pomme au milieu, puis garnissez avec l’aneth et du poivre (fraîchement moulu). Accompagnez le tout de la ciabatta aux graines de tournesol.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 592,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-poulet-et-haricots-a-lail-5b76db69ae08b52354685ea3",
@@ -10638,7 +10853,9 @@
           "text": "Servez les pommes de terre sur les assiettes. Placez le filet de poulet et les haricots verts à côté, parsemez avec les échalotes et les graines de citrouille.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 692,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/chakchouka-traditionnelle-aux-oeufs-5b76db6bae08b523ac3bc6b2",
@@ -10737,7 +10954,9 @@
           "text": "Servez le plat sur les assiettes. Garnissez avec le reste de persil et accompagnez de la baguette d’épeautre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 601,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-pates-a-lavocat-et-a-la-ricotta-5b76db73ae08b523a1612d66",
@@ -10823,7 +11042,9 @@
           "text": "• Mélangez les rigatoni aux tomates cerises, à l’avocat, aux herbes, à la ricotta et à la mâche.\n• Servez la salade de pâtes sur les assiettes, puis garnissez avec les graines de courge et les quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 588,
+      "protein": 19.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-deglefin-et-grenailles-a-lail-5b76db75ae08b523822d2954",
@@ -10899,7 +11120,9 @@
           "text": "• Mélangez le reste de beurre aux grenailles, puis ajoutez l’ail, les herbes et les haricots. Salez et poivrez.\n• Servez les grenailles et les haricots sur les assiettes. Accompagnez de l’églefin et garnissez avec 1 cs de crème aigre par personne.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 599,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/rumpsteak-et-salade-a-lasiatique-5b76db77ae08b523a1612d69",
@@ -11018,7 +11241,9 @@
           "text": "Pendant ce temps, ajoutez le mélange de salades au chou rouge et au radis. Servez la salade sur les assiettes. Tranchez le rumsteak à contrefil. Disposez les tranches sur la salade et garnissez de graines de sésame. Accompagnez des frites au four et de la mayonnaise au citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 934,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/mijote-cremeux-aux-trois-poissons-5b7c1bd130006c7fdd2c8102",
@@ -11127,7 +11352,9 @@
           "text": "Versez les grenailles dans la cassolette de poisson ou servez-les séparément. Garnissez les cassolettes avec le cerfeuil et éventuellement les fanes de fenouil. Pressez les quartiers de citron sur le tout à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1133,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-pates-tomates-colorees-et-feta-5b80229d30006c39cc6b4b52",
@@ -11206,7 +11433,9 @@
           "text": "Servez le plat sur les assiettes et garnissez avec le reste de feta.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 689,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pizza-verde-au-chevre-5b80229f30006c3a2c43aa42",
@@ -11300,7 +11529,9 @@
           "text": "Servez les pizzas sur les assiettes et garnissez avec les noix au miel et au thym.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 964,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/riz-a-la-noix-de-coco-sauce-aux-cacahuetes-et-legumes-a-letuvee-5b8022a130006c3a4b4f8532",
@@ -11424,7 +11655,9 @@
           "text": "Servez le riz sur les assiettes. Déposez les légumes par-dessus et garnissez avec les feuilles de coriandre et le reste de cacahuètes. Faites glisser les œufs au plat sur le tout.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 931,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-tomate-et-de-poivron-au-filet-de-poulet-poche-5b8022a330006c39dc63ff02",
@@ -11533,7 +11766,9 @@
           "text": "Servez la soupe dans les bols, puis garnissez avec le filet de poulet et le persil. Arrosez d’un filet d’huile d’olive vierge extra si vous le souhaitez et accompagnez le tout du pain rosette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 583,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-aux-champignons-et-au-danablu-5b8022a530006c3a386012c2",
@@ -11619,7 +11854,9 @@
           "text": "• Incorporez les champignons à l’orzo et servez le tout sur les assiettes.\n• Garnissez avec le danablu et la salade de roquette.\n• Accompagnez le tout des quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 802,
+      "protein": 23.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/bami-et-cuisse-de-poulet-epicee-a-lorientale-5b8022a730006c39d76ab532",
@@ -11690,7 +11927,9 @@
           "text": "• Servez le plat sur les assiettes et ajoutez de la sauce soja sucrée à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 652,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-a-la-mozzarella-de-bufflonne-aux-figues-et-au-jambon-serrano-5b8022a830006c3a643a4e63",
@@ -11799,7 +12038,9 @@
           "text": "Servez la salade avec les crostinis et garnissez avec les câpres, les éventuelles fanes de fenouil et les lanières de menthe.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 852,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-de-patates-douces-au-fromage-vieux-5b89524cae08b50560140d72",
@@ -11898,7 +12139,9 @@
           "text": "Servez la purée sur les assiettes, puis garnissez avec le reste de fromage vieux et les noix de pécan.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 653,
+      "protein": 20.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/couscous-complet-et-fromage-bleu-5b895256ae08b5054b3b6d42",
@@ -12007,7 +12250,9 @@
           "text": "Servez la salade sur les assiettes, parsemez de danablu et de pistaches, puis garnissez de quartiers de poire. Versez un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 619,
+      "protein": 19.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-de-pois-chiches-et-boeuf-epice-5b895258ae08b505881e9842",
@@ -12116,7 +12361,9 @@
           "text": "Servez la purée de pois chiches sur les assiettes, disposez le bœuf par-dessus et garnissez avec la menthe. Accompagnez le tout du brocoli rôti et des quartiers de citron. Utilisez les morceaux de pain plat pour saucer.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 909,
+      "protein": 50.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-perche-du-nil-pommes-de-terre-et-poireau-5b89525cae08b50574130192",
@@ -12197,7 +12444,9 @@
           "text": "• Servez le filet de perche, les rondelles de pommes de terre et le poireau étuvé sur les assiettes. Accompagnez le tout de mayonnaise à l’aneth.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 755,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-nicoise-au-thon-frais-5b895261ae08b5054c7e9085",
@@ -12316,7 +12565,9 @@
           "text": "Coupez les œufs en quartiers. Disposez les grenailles, la salade, les haricots, les tomates, les œufs, les câpres, les olives et les steaks de thon sur les assiettes, mais sans les mélanger. Arrosez avec la vinaigrette et poivrez à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 651,
+      "protein": 48.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-nouilles-au-lait-de-coco-et-au-poulet-5b928b3dae08b55366086822",
@@ -12425,7 +12676,9 @@
           "text": "Servez la soupe dans les bols, puis garnissez avec le basilic et les quartiers de citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 643,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/wraps-a-laubergine-epicee-et-au-steak-hache-5b928b45ae08b553974324f4",
@@ -12524,7 +12777,9 @@
           "text": "Servez les dés d’aubergine et de tomate, la feta, la menthe, l’iceberg, le steak haché et la sauce au yaourt et au tahini dans différents bols pour que chacun puisse garnir son wrap à table.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 823,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/linguine-aux-legumes-rotis-et-a-la-feta-5b928b49ae08b553647e9843",
@@ -12623,7 +12878,9 @@
           "text": "Servez les linguine dans les assiettes et garnissez avec la feta, la menthe, le basilic et le persil. Arrosez d’un filet d’huile d’olive vierge extra si vous le souhaitez. Accompagnez le tout des tomates rôties et de la courgette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 836,
+      "protein": 23.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-de-couscous-epicee-et-chevre-frais-5b928b4bae08b5537e16ee92",
@@ -12727,7 +12984,9 @@
           "text": "Servez la salade de couscous dans les assiettes. Émiettez le chèvre par-dessus et garnissez avec les amandes salées ainsi que le reste de persil et de mélisse citronnelle. Servez le tout avec le reste de jus de citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 886,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/nouilles-de-sarrasin-et-tofu-epice-5b928b4dae08b55383267f83",
@@ -12831,7 +13090,9 @@
           "text": "Servez le plat dans les assiettes, puis garnissez avec le reste de graines de sésame et de piment rouge ainsi que la sauce soja.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 717,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-poulet-et-mijote-de-legumes-sucre-et-epice-5b928b4fae08b5538600b152",
@@ -12945,7 +13206,9 @@
           "text": "Servez le mijoté de légumes dans des assiettes creuses, disposez le filet de poulet par-dessus et garnissez avec le persil et les amandes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 775,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-grecque-et-cuisse-de-poulet-5b928b55ae08b5537e16ee93",
@@ -13041,7 +13304,9 @@
           "text": "• Servez la salade dans les assiettes.\n• Disposez le couscous perlé et le poulet par-dessus, puis garnissez avec la feta et les quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 800,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/ragu-au-canard-confit-5b928b59ae08b5536f17e523",
@@ -13160,7 +13425,9 @@
           "text": "Effilochez la viande de la cuisse de canard à l’aide d’une fourchette. Ajoutez-la à la sauce tomate, puis remuez bien. Servez les linguine dans les assiettes et versez la sauce par-dessus. Garnissez de persil plat et accompagnez de la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 964,
+      "protein": 40.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/tacos-mexicains-fourres-au-poulet-hache-5b9f8d8d30006c69782dab65",
@@ -13269,7 +13536,9 @@
           "text": "Servez les tacos dans les assiettes, remplissez-les de mélange au poulet, puis garnissez de cheddar et d’une cuillère à soupe de crème aigre par personne.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 649,
+      "protein": 43.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-aux-mini-tomates-roma-au-four-5b9f8d8e30006c696d525622",
@@ -13373,7 +13642,9 @@
           "text": "Servez l’orzo dans les assiettes et garnissez avec le reste de gruyère. Disposez les mini-tomates Roma et leur jus de cuisson sur le plat.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 791,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pizza-funghi-sur-pain-plat-5b9f8d9130006c69a4393852",
@@ -13467,7 +13738,9 @@
           "text": "Garnissez les pizzas de roquette et servez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 688,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/steak-sandwich-au-provolone-5b9f8d9730006c696f71ab72",
@@ -13558,7 +13831,9 @@
           "text": "• Dans le saladier, mélangez la roquette et la mâche à la vinaigrette.\n• Garnissez la ciabatta avec la moitié des tomates cerises, puis refermez avec l’autre moitié du pain. Servez la salade à côté du steak sandwich et ajoutez-y le reste de tomates cerises.\n• Garnissez la salade avec les graines de tournesol.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 696,
+      "protein": 38.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-saumon-et-salade-de-pommes-de-terre-a-lasiatique-5b9fca4130006c1eee142442",
@@ -13657,7 +13932,9 @@
           "text": "Mélangez le reste de vinaigrette et la mayonnaise avec les pommes de terre, puis salez et poivrez. Servez la salade de pommes de terre et les brocolis dans les assiettes. Disposez le filet de saumon à côté et parsemez du reste de graines de sésame.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 823,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-pommes-de-terre-a-la-peruvienne-avec-de-la-feta-5b9fca4530006c1ed6208b42",
@@ -13771,7 +14048,9 @@
           "text": "Servez la soupe dans des assiettes creuses, puis garnissez avec la feta, les noix de cajou, la courgette et la coriandre. Accompagnez le tout de la ciabatta.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 764,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pilaf-au-cabillaud-vapeur-5b9fca4630006c1edb6a0a12",
@@ -13875,7 +14154,9 @@
           "text": "Servez le riz et le poisson dans les assiettes. Accompagnez des quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 560,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/tacos-mexicains-au-poulet-hache-5b9fca4830006c1ef6479fa2",
@@ -13984,7 +14265,9 @@
           "text": "Servez les tacos dans les assiettes, remplissez-les de mélange au poulet, puis garnissez de cheddar et d’une cuillère à soupe de crème aigre par personne.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 649,
+      "protein": 43.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-aux-mini-tomates-roma-roties-5b9fca4930006c1ed6208b43",
@@ -14088,7 +14371,9 @@
           "text": "Servez l’orzo dans les assiettes et garnissez avec le reste de gruyère. Disposez les mini-tomates Roma et leur jus de cuisson sur le plat.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 791,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/riz-legumes-piquants-et-falafels-5b9fca4c30006c1ef2241052",
@@ -14197,7 +14482,9 @@
           "text": "Servez le riz aux légumes sur les assiettes. Pour plus d’onctuosité, ajoutez éventuellement de l’huile d’olive vierge extra. Accompagnez des falafels et du tzatziki.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 955,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/emince-de-porc-dans-une-marinade-sucree-5b9fca4d30006c1ed6208b44",
@@ -14296,7 +14583,9 @@
           "text": "Servez les nouilles dans les assiettes, ajoutez le porc par-dessus et arrosez le tout de la marinade en sauce. Pressez les quartiers de citron vert au-dessus du plat selon votre goût.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 671,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/linguine-au-saumon-fume-a-chaud-5b9fca5330006c1eee142443",
@@ -14395,7 +14684,9 @@
           "text": "Dans les assiettes, faites un petit nid avec le reste d’épinards. Servez les linguine dans les assiettes et garnissez avec le saumon, les tomates, les pignons de pin et les quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 821,
+      "protein": 40.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-aux-crevettes-a-lail-et-aux-courgettes-5ba8a95e30006c3bb179e112",
@@ -14494,7 +14785,9 @@
           "text": "Servez l’orzo aux courgettes avec les crevettes et garnissez avec le reste des amandes effilées et des herbes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 517,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/colin-marine-aux-herbes-du-jardin-5ba8a96530006c3c441c9ff3",
@@ -14578,7 +14871,9 @@
           "text": "Servez les quartiers de pommes de terre sur les assiettes et garnissez avec la ciboulette. Disposez les haricots à côté et garnissez avec les amandes. Accompagnez le tout de la sauce ravigote et du colin mariné.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 872,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-de-chicoree-et-echine-de-porc-5ba8a96730006c3c346c38b5",
@@ -14667,7 +14962,9 @@
           "text": "Servez la purée de chicorée dans les assiettes et garnissez avec le reste de ciboulette. Disposez  l'échine de porc à côté et garnissez avec les dés de pomme.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 857,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-aux-pommes-de-terre-et-au-poireau-avec-de-la-creme-fraiche-5ba8a96a30006c3bb179e113",
@@ -14761,7 +15058,9 @@
           "text": "Servez la soupe dans les bols et versez une bonne cuillerée de crème fraîche dans chacun d’entre eux. Garnissez avec la ciboulette et accompagnez le tout des crostinis et d’un quartier de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 729,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/penne-completes-aux-betteraves-rouges-et-au-chevre-5ba8a96b30006c3bef6fa202",
@@ -14865,7 +15164,9 @@
           "text": "Servez le reste de roquette dans les assiettes et versez les penne par-dessus. Disposez les poires, les betteraves et le chèvre sur les pâtes, puis garnissez avec les noix de pécan. Arrosez d’un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 627,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/saucisse-de-porc-et-puree-aux-brocolis-5ba8a96d30006c3bb179e114",
@@ -14964,7 +15265,9 @@
           "text": "Servez la purée aux brocolis avec la saucisse et le jus d’oignon, puis garnissez le tout de noix.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 978,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/conchiglie-au-pesto-rouge-et-a-la-feta-5ba8a96f30006c3bee5c9352",
@@ -15055,7 +15358,9 @@
           "text": "• Servez la mâche et les conchiglie sur les assiettes. Garnissez le plat avec la feta et le basilic.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 848,
+      "protein": 23.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pizza-sur-naan-au-boeuf-hache-et-aux-epinards-5ba8a97030006c3c3b3f3db2",
@@ -15141,7 +15446,9 @@
           "text": "• Tartinez le naan cuit de yazzara.\n• Disposez le bœuf et les épinards par-dessus.\n• Servez la pizza sur naan avec la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 868,
+      "protein": 44.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-cesar-de-luxe-au-poulet-5ba8a97130006c3be559c7d2",
@@ -15245,7 +15552,9 @@
           "text": "Dans le saladier où sera servi le plat, mélangez la romaine, les haricots et les croûtons. Disposez les quartiers d’œuf par-dessus puis garnissez avec la vinaigrette et le parmigiano reggiano. Disposez les anchois par-dessus, puis le lard, et servez enfin le poulet au milieu. Assaisonnez de poivre et éventuellement de sel. Accompagnez le tout des quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 996,
+      "protein": 51.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/rumsteak-et-ail-roti-5ba8a97330006c3bf1494e63",
@@ -15344,7 +15653,9 @@
           "text": "Coupez ensuite le rumsteak à contrefil en faisant de belles tranches bien fines. Imbriquez-les de sorte qu’elles se recouvrent à moitié, puis versez l’ail pressé par-dessus. Accompagnez des grenailles et de la mayonnaise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1204,
+      "protein": 50.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pilons-de-poulet-piri-piri-a-laioli-5ba8a97430006c3bf075cb92",
@@ -15433,7 +15744,9 @@
           "text": "Servez les pilons de poulet, les légumes et les pommes de terre sur les assiettes. Accompagnez le tout de la salade et de l’aïoli.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 776,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/risotto-dorzo-aux-champignons-5bb1d8e330006c3e30172bd2",
@@ -15527,7 +15840,9 @@
           "text": "Servez le plat dans les assiettes. Garnissez avec les noix et le parmigiano reggiano.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 724,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/crevettes-et-vinaigrette-au-gingembre-et-au-citron-vert-5bb1d8e430006c3e696f22d2",
@@ -15636,7 +15951,9 @@
           "text": "Servez le riz sur les assiettes et disposez les brocolis par-dessus. Ajoutez les crevettes et arrosez le tout de la vinaigrette. Garnissez enfin avec le vert des oignons nouveaux.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 742,
+      "protein": 31.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pizza-sur-pain-plat-au-chou-rouge-et-au-gyros-de-poulet-5bb1d8e530006c3e666a1722",
@@ -15740,7 +16057,9 @@
           "text": "Servez les pizzas sur les assiettes et garnissez-les de chou rouge.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 859,
+      "protein": 47.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gratin-daubergine-et-rigatoni-5bb1d8e630006c3e2d220ff4",
@@ -15849,7 +16168,9 @@
           "text": "Servez les rigatoni sur les assiettes et disposez l’aubergine gratinée par-dessus. Ciselez le basilic frais et garnissez-en le plat. Accompagnez le tout de la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 734,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/quinoa-au-ras-el-hanout-et-feta-au-four-5bb1d8e830006c3e430e2ae2",
@@ -15968,7 +16289,9 @@
           "text": "Servez le quinoa dans les assiettes. Disposez les haricots et les tomates par-dessus et terminez par la feta rôtie. Garnissez le plat avec les pignons de pin, le reste de menthe et un peu d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 881,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-nouilles-au-curry-et-a-leffiloche-de-poulet-5bb1d8eb30006c3e820415f2",
@@ -16062,7 +16385,9 @@
           "text": "Versez la soupe dans les bols. Disposez le poulet par-dessus et garnissez-la avec le piment jaune.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 636,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/chilli-sin-carne-5bb1d8ec30006c3e696f22d3",
@@ -16168,7 +16493,9 @@
           "text": "•\tServez le riz sur les assiettes et versez le chili sin carne par-dessus.\n•\tAccompagnez du guacamole et de la crème aigre et garnissez avec le reste de coriandre et les quartiers de citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 735,
+      "protein": 19.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/spaghetti-bolognese-5bb1d8ed30006c3e4f2e7265",
@@ -16274,7 +16601,9 @@
           "text": "•\tMélangez la roquette, la mâche, les lamelles de concombre et la vinaigrette.\n•\tServez les pâtes dans les assiettes et versez la sauce par-dessus. Garnissez avec les feuilles de basilic et les pignons de pin. Accompagnez le plat de la salade au concombre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 956,
+      "protein": 50.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-porc-en-croute-de-pistache-au-thym-5bb1d8ee30006c3e7455c3d3",
@@ -16373,7 +16702,9 @@
           "text": "Débitez le filet de porc en tranches. Servez la purée et le filet de porc sur les assiettes. Accompagnez des chicons caramélisés. Garnissez enfin avec le reste de thym et les pistaches qui se sont détachées de la viande.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 807,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/grosses-crevettes-marinees-au-citron-et-a-lail-5bb1d8f030006c3e7250c952",
@@ -16492,7 +16823,9 @@
           "text": "Servez le couscous perlé dans les assiettes, disposez le chèvre par-dessus et présentez les crevettes à côté. Garnissez avec la préparation aux noix, le cresson roquette et les éventuelles fanes de fenouil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 843,
+      "protein": 42.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/cheeseburger-a-la-tomate-et-au-cheddar-5bb1d8f130006c3e430e2ae3",
@@ -16596,7 +16929,9 @@
           "text": "Servez le burger avec les quartiers de pommes de terre, le reste de salade et la mayonnaise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 992,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-poivron-et-de-patates-douces-5bbb0a75ae08b507144742e2",
@@ -16685,7 +17020,9 @@
           "text": "Versez la soupe dans les bols. Garnissez-la avec les graines de courge et la crème fraîche puis servez le tout avec les petits pains au curcuma.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 745,
+      "protein": 18.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/colin-epice-aux-carottes-multicolores-roties-5bbb0a77ae08b506f1706f92",
@@ -16784,7 +17121,9 @@
           "text": "Servez le poisson avec les pommes de terre sautées et les carottes rôties. Garnissez avec la vinaigrette à la feta et le persil plat.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 779,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-de-panais-et-de-patates-douces-5bbb0a7aae08b506fe514852",
@@ -16878,7 +17217,9 @@
           "text": "Servez la purée en la garnissant avec les noix de pécan et le reste de la roquette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 727,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orge-perle-a-laubergine-et-yaourt-aux-herbes-5bbb0a7bae08b5070015cf84",
@@ -16982,7 +17323,9 @@
           "text": "Servez le plat accompagné du yaourt aux herbes et garnissez avec le reste des herbes, des graines de grenade et une partie des amandes salées.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 636,
+      "protein": 18.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pommes-de-terre-roties-et-sauce-tomate-5bbb0a7dae08b5071b2b8cc3",
@@ -17101,7 +17444,9 @@
           "text": "Servez les pommes de terre rôties. Versez la sauce tomate par-dessus, puis parsemez du persil et du reste du fromage de chèvre. Garnissez avec la crème fraîche.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 724,
+      "protein": 19.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/saucisse-de-porc-et-potimarron-roti-5bbb0a7eae08b506f1706f94",
@@ -17195,7 +17540,9 @@
           "text": "Servez le potimarron à la roquette avec la saucisse et garnissez avec la crème aigre",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 593,
+      "protein": 23.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/rigatoni-sauce-a-la-creme-aux-champignons-5bbb0a80ae08b5071b2b8cc4",
@@ -17281,7 +17628,9 @@
           "text": "•\tPendant ce temps, ciselez le persil.\n•\tVersez les rigatoni dans la sauce et réchauffez-les en remuant pour que toutes les saveurs se mélangent bien. Assaisonnez si nécessaire.\n•\tServez les rigatoni en les garnissant du reste de chicon et du persil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 824,
+      "protein": 18.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/cuisse-de-canard-confite-et-raisins-secs-5bbb0a82ae08b506f1706f95",
@@ -17405,7 +17754,9 @@
           "text": "Servez la purée de pommes de terre et les carottes glacées, puis disposez la cuisse de canard confite à côté. Garnissez cette dernière avec les raisins secs aigres-doux et parsemez du reste de persil plat.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1144,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/faux-filet-de-boeuf-a-lail-et-au-romarin-5bbb0a84ae08b506ee6ca903",
@@ -17509,7 +17860,9 @@
           "text": "Placez les haricots verts dans les assiettes et garnissez-les avec les amandes, les tomates séchées et les lardons. Placez la purée à côté et garnissez celle-ci avec la ciboulette. Disposez le faux-filet à côté et versez le reste de graisse de cuisson par-dessus.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1194,
+      "protein": 56.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/eglefin-oignons-doux-et-sauce-au-beurre-5bbb0a85ae08b5070015cf85",
@@ -17598,7 +17951,9 @@
           "text": "Servez les brocolis et les pommes de terre dans des assiettes. Accompagnez du poisson et des oignons, puis versez la sauce au beurre par-dessus.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 931,
+      "protein": 35.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gyros-de-poulet-et-quinoa-au-citron-5bc449d330006c6455596a02",
@@ -17702,7 +18057,9 @@
           "text": "Servez le quinoa au citron. Disposez le gyros de poulet à l’ail par-dessus et garnissez avec les pignons de pin, le reste du persil et du zeste de citron. Présentez les quartiers de citron et la crème aigre en accompagnement.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 897,
+      "protein": 43.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-potiron-et-de-cacahuetes-aux-oeufs-5bc449d530006c63ef5b8094",
@@ -17796,7 +18153,9 @@
           "text": "Versez la soupe dans les bols, disposez les œufs par-dessus et garnissez avec le vert des oignons nouveaux. Accompagnez le tout du pain plat.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 823,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/penne-sauce-bolognaise-de-lentilles-et-feta-5bc449d630006c643b1c3582",
@@ -17915,7 +18274,9 @@
           "text": "Servez le plat sur les assiettes, émiettez le reste du feta par-dessus et parsemez de graines de courge. Accompagnez le tout de roquette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 931,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/tofu-epice-et-pak-choi-grille-5bc449d730006c6457583d82",
@@ -18019,7 +18380,9 @@
           "text": "Servez le riz basmati et le pak-choï grillé, les concombres aigres-doux et les dés de tofu. Garnissez avec les graines de sésame, le reste de la marinade et la coriandre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 724,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/mijote-de-cuisse-de-poulet-aux-lardons-5bc449d930006c63e8117172",
@@ -18148,7 +18511,9 @@
           "text": "Retirez le persil, le thym et la feuille de laurier de la casserole. Servez le poulet aux légumes en sauce et garnissez avec les feuilles de persil ciselées. Accompagnez le tout de la ciabatta.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 981,
+      "protein": 48.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/haricots-noirs-a-la-sud-americaine-5bc449db30006c640941a2a4",
@@ -18264,7 +18629,9 @@
           "text": "• Servez les haricots noirs et la sauce dans un bol à soupe ou dans une assiette creuse. Versez délicatement le riz au centre. Émiettez la feta par-dessus.\n• Garnissez le tout des graines de courge et accompagnez de la crème aigre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 694,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/salade-liegeoise-5bc449db30006c643a7abf92",
@@ -18350,7 +18717,9 @@
           "text": "• Pendant ce temps, ciselez le persil plat.\n• Mélangez la vinaigrette, les grenailles et les haricots.\n• Servez le mesclun sur les assiettes et versez les grenailles et les haricots par-dessus.\n• Garnissez avec les quartiers d’œuf et le persil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 653,
+      "protein": 23.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/poulet-poche-sauce-au-thon-5bc449dc30006c6455596a03",
@@ -18469,7 +18838,9 @@
           "text": "Servez le pollo tonnato avec les tomates rôties et le pain au levain tartiné de beurre aux fines herbes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1251,
+      "protein": 42.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/echine-de-porc-et-potimarron-roti-5bc449de30006c63ef5b8097",
@@ -18588,7 +18959,9 @@
           "text": "Servez l'échine de porc avec la salade, les grenailles, le potimarron et la mayonnaise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1240,
+      "protein": 53.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/spaghetti-au-jambon-serrano-et-a-la-courgette-5bc449e030006c641e43c2a3",
@@ -18682,7 +19055,9 @@
           "text": "Servez le plat dans les assiettes. Garnissez avec le reste du jambon serrano et de fromage vieux. Arrosez avec le reste d’huile d’olive vierge extra et accompagnez le tout des mini-tomates Roma au four.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 788,
+      "protein": 33.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/couscous-perle-crevettes-et-courgette-5bceef3030006c2ac147e7d2",
@@ -18786,7 +19161,9 @@
           "text": "Servez le plat et versez un filet supplémentaire de jus de citron si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 607,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/dahl-a-lindienne-aux-patates-douces-et-au-lait-de-coco-5bceef3230006c2abf03f522",
@@ -18910,7 +19287,9 @@
           "text": "Lorsque le dahl est prêt, incorporez les épinards et laissez-les réduire. Goûtez le dahl, puis salez, poivrez et ajouter le reste de jus de citron vert. Servez le dahl dans des bols, garnissez avec l’huile aux graines de courge et accompagnez le tout du naan.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 886,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-bar-et-pommes-de-terre-a-la-sauce-tomate-5bceef3430006c2af15727d2",
@@ -19004,7 +19383,9 @@
           "text": "Servez les pommes de terre et la sauce tomate, disposez le filet de bar à côté et garnissez le tout avec les olives Leccino.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 621,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/burger-au-piment-vert-piquant-et-au-piccalilli-5bceef3630006c2af868e603",
@@ -19118,7 +19499,9 @@
           "text": "Servez le burger, les quartiers de pomme de terre et le reste de la salade, accompagnez le tout du reste de piccalilli.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 925,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/lasagnes-de-legumes-et-bechamel-maison-5bceef3830006c2b1724dd32",
@@ -19222,7 +19605,9 @@
           "text": "Laissez les lasagnes refroidir 3 minutes avant de servir pour qu’elle se raffermisse. Enfin, servez les lasagnes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 865,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/chakchouka-a-la-mexicaine-aux-chips-de-tortilla-5bceef3a30006c2b0d5d7233",
@@ -19321,7 +19706,9 @@
           "text": "Servez la chakchouka dans la poêle et garnissez avec la feta et la coriandre. Accompagnez des chips de tortilla, qui serviront à saucer.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 892,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/mac-and-cheese-a-la-courge-5bceef3c30006c2b1a7ec9d2",
@@ -19425,7 +19812,9 @@
           "text": "Sortez le plat du four et servez les mac & cheese. Garnissez avec le reste de thym.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 682,
+      "protein": 27.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/saucisse-fumee-et-gratin-de-pomme-de-terre-5bceef3e30006c2b2516c4e2",
@@ -19519,7 +19908,9 @@
           "text": "Servez le gratin de pommes de terre avec les choux de Bruxelles à l’ail et la saucisse fumée.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 963,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/poulet-pommes-de-terre-au-thym-et-mayonnaise-au-citron-5bceef4230006c2ad37174c2",
@@ -19605,7 +19996,9 @@
           "text": "• Pressez le citron vert. Dans le petit bol, mélangez 1 cc de jus par personne à la mayonnaise.\n• Dans le saladier, préparez la vinaigrette avec le vinaigre de vin blanc et l’huile d’olive vierge extra, puis ajoutez les haricots et les lardons. Salez et poivrez.\n• Servez les pommes de terre avec les dés de poulet et disposez la salade de haricots à côté. Garnissez avec la mayonnaise au citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 745,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orecchiette-au-pesto-et-poulet-confit-5bceef4330006c2b2516c4e3",
@@ -19704,7 +20097,9 @@
           "text": "Servez les pâtes avec les tomates cerises rôties, le poulet et la mozzarella. Garnissez avec les pignons de pin et les feuilles de basilic.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1052,
+      "protein": 52.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-mignon-dans-une-sauce-sucree-et-piquante-5bceef4530006c2b4577a9f2",
@@ -19853,7 +20248,9 @@
           "text": "Coupez le filet mignon en tranches. Mélangez le riz avec les graines et les herbes, puis salez et poivrez. Servez le riz et garnissez avec les oignons nouveaux. Disposez les bimis et le pak-choï à côté et parsemez de graines de sésame. Accompagnez le tout du filet mignon et garnissez avec les quartiers de citron vert. Versez un peu de sauce sur la viande et servez le reste à table.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 921,
+      "protein": 47.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/rigatoni-au-filet-de-poulet-et-aux-haricots-verts-5bceef4730006c2b2c19e5d2",
@@ -19932,7 +20329,9 @@
           "text": "Servez les rigatoni. Arrosez-les d’un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 820,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/moussaka-aux-legumes-5bd30dc630006c65b57cb753",
@@ -20066,7 +20465,9 @@
           "text": "Servez la moussaka dans des assiettes creuses et présentez le pain à l’ail en accompagnement.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 821,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/saumon-dans-une-marinade-sucree-et-piquante-5bd30dc830006c65e755fa82",
@@ -20155,7 +20556,9 @@
           "text": "Servez le riz. Disposez les brocolis autour et le saumon par-dessus. Enfin, versez la sauce sur le saumon et le riz.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 841,
+      "protein": 37.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-nouilles-japonaise-et-filet-de-poulet-5bd30dca30006c6603777082",
@@ -20244,7 +20647,9 @@
           "text": "Versez la soupe dans les bols.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 516,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-tomates-roma-et-gruyere-5bd30dcc30006c65b11887c2",
@@ -20343,7 +20748,9 @@
           "text": "Servez l’orzo en disposant les tomates et la courgette par-dessus, puis garnissez de pignons de pin au romarin et parsemez du reste de gruyère.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 592,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/nouilles-a-lasiatique-oeufs-brouilles-et-cacahuetes-5bd30dce30006c6603777083",
@@ -20447,7 +20854,9 @@
           "text": "Servez le plat sur les assiettes. Accompagnez des œufs brouillés et garnissez avec les cacahuètes et les quartiers de citron vert.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 742,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/linguine-et-riz-de-chou-fleur-au-baharat-5bd30dd030006c65c570ad82",
@@ -20551,7 +20960,9 @@
           "text": "Servez les linguine et parsemez-les avec le reste des herbes et les pignons de pin. Arrosez-les avec le reste de jus de citron juste avant de servir.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 692,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-de-pak-choi-lardons-et-piment-rouge-5bd30dd230006c65e678cd62",
@@ -20675,7 +21086,9 @@
           "text": "Servez la purée et garnissez-la avec les lardons et les graines de sésame. Accompagnez le tout de quartiers de citron vert et de concombre mariné.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 763,
+      "protein": 18.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/aubergine-a-la-mozzarella-de-bufflonne-et-au-pesto-de-poivron-5bd30dd430006c66254adbd2",
@@ -20766,7 +21179,9 @@
           "text": "• Ajoutez le couscous perlé à la poêle et faites cuire 2 minutes de plus.\n• Pendant ce temps, hachez grossièrement les feuilles de basilic.\n• Servez les aubergines et le couscous perlé dans les assiettes et garnissez avec le basilic.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 793,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pains-plats-au-chawarma-de-dinde-5bd30dd630006c65c570ad83",
@@ -20852,7 +21267,9 @@
           "text": "•\tServez les pains plats au chawarma",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 950,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/rumsteak-dans-une-baguette-multicereales-5bd30dd830006c663a31a073",
@@ -20961,7 +21378,9 @@
           "text": "Garnissez la baguette avec un peu de roquette et de mâche, disposez les tranches de rumsteak par-dessus et arrosez avec le jus de la poêle. Ajoutez quelques champignons, puis refermez le pain. Présentez le reste de salade en accompagnement en y ajoutant le reste de champignons. Garnissez avec le persil et les graines de courge.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 893,
+      "protein": 48.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/paleron-de-veau-chou-rouge-et-pomme-5bd30ddb30006c65c570ad86",
@@ -21080,7 +21499,9 @@
           "text": "Servez la purée et disposez le chou rouge à côté. Ajoutez le veau et arrosez-le avec le jus. Garnissez avec le cerfeuil.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1202,
+      "protein": 39.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/potee-aux-epinards-au-hachis-et-au-persil-tubereux-5bd30ddc30006c65e43754d2",
@@ -21174,7 +21595,9 @@
           "text": "Servez la potée aux épinards et au hachis sur les assiettes et accompagnez de compote de pommes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 797,
+      "protein": 44.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-piquante-a-la-noix-de-coco-et-a-leglefin-5bdc60c5ae08b57b9800a382",
@@ -21268,7 +21691,9 @@
           "text": "Versez la soupe à la noix de coco et au poisson dans les bols.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 572,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-au-chou-fleur-et-aux-bimis-grilles-5bdc60c7ae08b57ba56c9cb4",
@@ -21367,7 +21792,9 @@
           "text": "Servez l’orzo sur les assiettes, disposez le chou-fleur et le thym par-dessus, puis garnissez avec les bimis, les amandes effilées et le reste de parmigiano reggiano.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 731,
+      "protein": 26.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-cabillaud-sauce-a-la-ciboulette-5bdc60c9ae08b57bcc7da1e2",
@@ -21451,7 +21878,9 @@
           "text": "Servez les carottes et les pommes de terre sur les assiettes, disposez le filet de cabillaud par-dessus et accompagnez de sauce à la ciboulette.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 584,
+      "protein": 29.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/wraps-au-boeuf-et-aux-legumes-a-la-coreenne-5bdc60cbae08b57bbf204f22",
@@ -21560,7 +21989,9 @@
           "text": "Garnissez les wraps avec le mélange de légumes crus. Disposez le bœuf et quelques concombres aigres-doux par-dessus, puis pressez un peu de jus de citron vert sur le tout. Parsemez de coriandre. Accompagnez du reste de concombre",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 639,
+      "protein": 40.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/chakchouka-a-la-mozzarella-de-bufflonne-5bdc60d1ae08b57bc5462dd3",
@@ -21659,7 +22090,9 @@
           "text": "Servez la chakchouka, garnissez avec le basilic et accompagnez de la ciabatta.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 757,
+      "protein": 34.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/poulet-sauce-a-la-creme-et-aux-poireaux-5bdc60d3ae08b57bc06363d3",
@@ -21753,7 +22186,9 @@
           "text": "Servez le riz dans des assiettes creuses. Disposez le poulet et les légumes en sauce par-dessus.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 781,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pitas-aux-falafels-et-lebne-5bdc60d5ae08b57bb305f432",
@@ -21849,7 +22284,9 @@
           "text": "• Présentez tous les ingrédients à table dans des bols pour que chacun puisse garnir ses pitas à sa guise avec de la mini-romaine, du poivron, du concombre et des falafels. Garnissez avec la feta et accompagnez de la sauce lebné.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 881,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/saucisse-de-boeuf-a-litalienne-et-pommes-de-terre-au-fromage-5bdc60d7ae08b57bbd306b23",
@@ -21935,7 +22372,9 @@
           "text": "• Ajoutez le parmigiano reggiano et le beurre sur les pommes de terre. Remuez bien, puis salez et poivrez.\n• Servez les pommes de terre avec la saucisse et les épinards.\n• Garnissez les épinards avec les pignons de pin et accompagnez le tout des quartiers de citron.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 830,
+      "protein": 44.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/burger-de-luxe-et-quartiers-de-pommes-de-terre-5bdc60d9ae08b57bbf204f23",
@@ -22059,7 +22498,9 @@
           "text": "Ouvrez les pains. Disposez le steak de veau et les oignons par-dessus Ajoutez ensuite l’œuf au plat, puis le reste de lard. Servez les burgers avec les pommes de terre, la mayonnaise et la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1247,
+      "protein": 51.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/echine-de-porc-desossee-et-courge-5bdc60dcae08b57bc06363d7",
@@ -22173,7 +22614,9 @@
           "text": "Présentez les quartiers de courge sur les assiettes en les emboîtant. Servez la salade aux betteraves à côté et émiettez le chèvre frais par-dessus. Coupez l’échine en tranches et disposez-les les unes contre les autres sur l’assiette. Versez la sauce par-dessus.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 942,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/petit-pain-aux-boulettes-sauce-barbecue-legerement-piquante-5be5b2cd30006c079a2169a2",
@@ -22312,7 +22755,9 @@
           "text": "Disposez les boulettes à la sauce tomate sur les pains à hamburger. Accompagnez le tout de la salade de concombre, des frites et de 1/2 cs de mayonnaise par personne.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 968,
+      "protein": 45.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/riz-jaune-et-curry-depinards-a-la-noix-de-coco-5be5b2ce30006c07ac356442",
@@ -22426,7 +22871,9 @@
           "text": "Servez le riz et les épinards sur les assiettes et disposez l’œuf au plat par-dessus. Garnissez avec les noix de cajou et la noix de coco râpée.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 788,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/perche-du-nil-et-puree-de-patate-douce-5be5b2d030006c0789693d62",
@@ -22510,7 +22957,9 @@
           "text": "Servez la purée et disposez la perche du Nil par dessus. Accompagnez le plat des quartiers de citron et garnissez-le du mélange de lardons et d’oignons restant.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 646,
+      "protein": 31.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-carotte-tomate-et-mozzarella-de-bufflonne-fondante-5be5b2d430006c07c91add32",
@@ -22599,7 +23048,9 @@
           "text": "Servez la soupe dans les bols, puis garnissez avec le reste de la mozzarella et le basilic. Accompagnez le tout du petit pain aux raisins secs et aux noix.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 756,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/linguine-et-tomates-cerises-au-four-5be5b2d630006c07e105fb02",
@@ -22698,7 +23149,9 @@
           "text": "Disposez la roquette sur les assiettes et versez les linguine par-dessus. Disposez les tomates cerises sur les pâtes, garnissez avec les graines de courge et le reste de grana padano, puis versez-y un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 601,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/tacos-au-tofu-a-la-japonaise-5be5b2d830006c07e41ccb72",
@@ -22802,7 +23255,9 @@
           "text": "Servez le tout et laissez chacun garnir ses tortillas avec le tofu, le mélange de légumes et de piment ainsi que la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 916,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gnocchi-a-la-poele-sauce-tomate-et-lardons-5be5b2da30006c07c91add33",
@@ -22916,7 +23371,9 @@
           "text": "Placez la roquette sur les assiettes et versez la sauce tomate par-dessus. Ensuite les gnocchi, puis parsemez avec le reste de grana padano et les lardons. Garnissez avec le basilic et arrosez d’un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 552,
+      "protein": 19.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/nouilles-asiatiques-au-boeuf-hache-epice-5be5b2de30006c07b3005f73",
@@ -23022,7 +23479,9 @@
           "text": "•\tServez le plat et garnissez avec les cacahuètes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 976,
+      "protein": 47.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/cassolette-de-poisson-de-luxe-a-la-creme-5be5b2e230006c07ba37ee62",
@@ -23131,7 +23590,9 @@
           "text": "Versez les pommes de terre dans la cassolette de poisson ou servez-les séparément. Garnissez les cassolettes avec le cerfeuil et éventuellement les fanes de fenouil. Pressez les quartiers de citron sur le tout à votre guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1166,
+      "protein": 36.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-de-merlu-poele-et-salade-de-pommes-de-terre-5be5b2e430006c07b91cc8d2",
@@ -23220,7 +23681,9 @@
           "text": "Servez la salade de pommes de terre sur les assiettes. Garnissez avec le reste du vert des oignons nouveaux et accompagnez le tout du filet de merlu.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 516,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/bar-a-la-poele-et-beurre-a-la-sauge-5beec8d230006c7b28231512",
@@ -23314,7 +23777,9 @@
           "text": "Accompagnez le filet de bar des pommes de terre épicées, du poireau et des tomates cerises. Arrosez avec la sauce au beurre qui reste dans la poêle.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 615,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/pizza-sur-pita-a-la-ricotta-aux-epinards-et-aux-lardons-5beec8d830006c7bdc6df1e2",
@@ -23423,7 +23888,9 @@
           "text": "Servez les pizzas sur pita et accompagnez-les de la salade.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 785,
+      "protein": 31.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-a-la-roquette-et-au-fromage-aux-fines-herbes-5beec8da30006c7b293fb882",
@@ -23532,7 +23999,9 @@
           "text": "Sur chaque assiette, faites un nid avec le reste de la roquette et servez la purée dessus. Parsemez-la du reste de fromage et de basilic et garnissez le tout avec les graines de tournesol.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 744,
+      "protein": 20.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/couscous-au-halloumi-et-aux-poivrons-rouges-sautes-5beec8dc30006c7bb432ff82",
@@ -23636,7 +24105,9 @@
           "text": "Servez le couscous et disposez les lanières de poivron à côté. Arrosez le couscous avec le jus de citron vert et garnissez avec le halloumi et les amandes. Servez le yaourt séparément pour que tout le monde puisse en ajouter à sa guise.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 870,
+      "protein": 30.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-de-courge-et-de-pois-chiches-au-cumin-5beec8de30006c7b293fb883",
@@ -23745,7 +24216,9 @@
           "text": "Servez la soupe dans les bols, puis garnissez avec les pois chiches grillés, la menthe, la crème aigre et de l’huile d’olive vierge extra à votre guise. Accompagnez le tout de la baguette d’épeautre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 622,
+      "protein": 25.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/linguine-aux-spaghetti-de-courgette-et-a-la-creme-dolives-5beec8e230006c7be85715b2",
@@ -23826,7 +24299,9 @@
           "text": "• Placez le reste des épinards sur les assiettes.\n• Disposez les linguine par-dessus et parsemez du reste de chèvre.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 678,
+      "protein": 22.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/steak-frites-et-mayonnaise-a-lestragon-5beec8e830006c7bdc6df1e4",
@@ -23935,7 +24410,9 @@
           "text": "Servez les frites, la salade et les tomates-cerises rôties, puis disposez le steak à côté. Accompagnez de la mayonnaise à l’estragon.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 923,
+      "protein": 40.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/orzo-a-la-courge-aux-epinards-et-au-grana-padano-5beeea3030006c194f531062",
@@ -24019,7 +24496,9 @@
           "text": "Servez l’orzo sur les assiettes. Garnissez avec le reste de grana padano et avec les noix de pécan.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 721,
+      "protein": 24.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/filet-deglefin-a-la-tapenade-de-tomates-5beeea3330006c19371e39c2",
@@ -24123,7 +24602,9 @@
           "text": "Servez le filet d’églefin avec le riz et la ratatouille.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 689,
+      "protein": 31.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gratin-depinards-cremeux-et-oeuf-au-plat-5beeea3930006c195500acc2",
@@ -24227,7 +24708,9 @@
           "text": "Servez les pommes de terre sur les assiettes et disposez l’œuf au plat par-dessus. Accompagnez le tout du gratin d’épinards.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 823,
+      "protein": 28.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/puree-de-patates-douces-et-aubergine-gratinee-5beeea3b30006c199362f3b3",
@@ -24316,7 +24799,9 @@
           "text": "Servez la purée de patates douces sur les assiettes et accompagnez-la de l’aubergine gratinée. Garnissez avec le reste de ciboulette et de chèvre. Versez un filet d’huile d’olive vierge extra si vous le souhaitez.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 649,
+      "protein": 21.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/gratin-a-la-grecque-au-boeuf-hache-et-aux-penne-5beeea3d30006c1987739ea2",
@@ -24420,7 +24905,9 @@
           "text": "Servez le gratin sur les assiettes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 909,
+      "protein": 51.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/soupe-aux-trois-tomates-et-croutons-au-fromage-5beeea3f30006c1983699b82",
@@ -24516,7 +25003,9 @@
           "text": "• Ajoutez le miel, du sel et du poivre, puis réduisez les tomates en purée à l’aide du mixeur plongeant.\n• Servez la soupe de tomates dans les bols. Garnissez avec la crème aigre.\n• Parsemez de croûtons et ajoutez une généreuse quantité de poivre noir.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 806,
+      "protein": 18.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/echine-de-porc-desossee-aux-choux-de-bruxelles-et-aux-lardons-5beeea4330006c19492ac429",
@@ -24615,7 +25104,9 @@
           "text": "Servez la purée de pommes de terre, l’échine, les choux de Bruxelles aux lardons, la pomme et le chutney.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1249,
+      "protein": 43.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/perche-du-nil-en-croute-de-noix-5beeea4530006c194f531064",
@@ -24739,7 +25230,9 @@
           "text": "Râpez presque tout le parmigiano reggiano au-dessus du risotto et mélangez bien en ajoutant le beurre et les tomates rôties détachées. Servez le risotto dans des assiettes creuses, puis disposez la perche du Nil et les tomates par-dessus. Râpez le reste du parmigiano reggiano au-dessus du risotto. Garnissez la salade avec le citron et présentez-la en accompagnement.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1114,
+      "protein": 44.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/steak-hache-et-chicons-caramelises-5beeea4730006c1966286b02",
@@ -24843,7 +25336,9 @@
           "text": "Servez les chicons, les pommes de terre et les steaks hachés sur les assiettes. Accompagnez de la salade et de la mayonnaise. Garnissez enfin la salade avec les graines de courge et de tournesol.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 769,
+      "protein": 32.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/echine-de-porc-marinee-au-tzatziki-5bf4291130006c53ac17e3c2",
@@ -24977,7 +25472,9 @@
           "text": "Servez le couscous à la tomate, émiettez la feta par-dessus, garnissez avec les amandes et présentez le tzatziki à côté. Accompagnez le tout de l’échine de porc.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 1311,
+      "protein": 50.0
     },
     {
       "id": "https://www.hellofresh.fr/recipes/risotto-a-la-saucisse-de-porc-epicee-et-au-fenouil-5bf82365e3f3396b807eacb2",
@@ -25081,7 +25578,9 @@
           "text": "Mélangez le mascarpone et la majeure partie du grana padano au risotto, puis salez et poivrez. Servez le risotto dans des assiettes creuses et parsemez du reste de grana padano. Accompagnez le tout de la salade de fenouil et décorez avec les fanes.",
           "image": ""
         }
-      ]
+      ],
+      "kcal": 754,
+      "protein": 29.0
     }
   ]
 }
