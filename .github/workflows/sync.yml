@@ -18,6 +18,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/sync_hellofresh.py
+      - name: Enrichir les valeurs nutritionnelles HelloFresh
+        run: python scripts/enrich_nutrition.py
       - name: Commit catalogue si modifié
         run: |
           git config user.name 'WhatsEat sync'
