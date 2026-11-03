@@ -62,10 +62,50 @@ $('planShopping').onclick=()=>{const ids=Object.values(state.planner||{}).filter
 $('pantrySearch').onclick=()=>{state.pantry=$('pantry').value.split(',').map(s=>s.trim()).filter(Boolean);save();renderPantry()};
 function renderPantry(){const pantry=(state.pantry||[]).map(fold);if(!pantry.length){$('pantryResults').innerHTML='<p class="muted">Ajoute quelques ingrédients pour voir les suggestions.</p>';return}const ranked=allRecipes().map(r=>{const ingredients=(r.items||[]).map(i=>fold(splitAmount(i).name));const have=ingredients.filter(x=>pantry.some(p=>x.includes(p)||p.includes(x)));return {r,have:have.length,missing:ingredients.length-have.length,total:ingredients.length}}).filter(x=>x.total&&x.have).sort((a,b)=>a.missing-b.missing||b.have-a.have).slice(0,12);$('pantryResults').innerHTML=ranked.map(x=>`<div class="pantryresult"><button data-pantry-recipe="${esc(x.r.id)}">${esc(x.r.title)}</button><span>${x.have}/${x.total} ingrédients · ${x.missing} manquant(s)</span></div>`).join('')||'<p>Aucune recette correspondante.</p>'}
 $('pantryResults').onclick=e=>{const b=e.target.closest('[data-pantry-recipe]');if(b)openRecipe(b.dataset.pantryRecipe)};
-let cookIndex=0,cookRecipe=null,cookEnd=0,cookTicker=null;
+// Minuteur indépendant de l'étape et conservé lors de la mise en veille / réouverture.
+const TIMER_STORE='whatseat-active-timer-v342';
+let cookIndex=0,cookRecipe=null,cookTicker=null;
+let activeTimer=null;
+try {const saved=JSON.parse(localStorage.getItem(TIMER_STORE)||'null');if(saved&&Number.isFinite(saved.end)&&saved.end>0)activeTimer=saved;}catch{}
+function stopCookingTimer(){activeTimer=null;localStorage.removeItem(TIMER_STORE);updateCookingTimer();}
+function startCookingTimer(minutes){
+ const ms=Math.round(Number(minutes)*60000);if(!ms||ms<1000)return;
+ activeTimer={end:Date.now()+ms,minutes,recipeId:cookRecipe?.id||'',recipeTitle:cookRecipe?.title||'Cuisson',step:cookIndex+1};
+ localStorage.setItem(TIMER_STORE,JSON.stringify(activeTimer));updateCookingTimer();
+}
+function updateCookingTimer(){
+ const banner=$('persistentTimer'),readout=$('persistentTimerReadout'),context=$('persistentTimerContext');
+ if(!activeTimer){banner.classList.add('hidden');return;}
+ const rem=Math.max(0,Math.ceil((activeTimer.end-Date.now())/1000));
+ banner.classList.remove('hidden');
+ readout.textContent=rem?`${Math.floor(rem/60)}:${String(rem%60).padStart(2,'0')}`:'⏰ Terminé !';
+ context.textContent=`${activeTimer.recipeTitle} · étape ${activeTimer.step}`;
+ if(!rem&&!activeTimer.finished){
+  activeTimer.finished=true;localStorage.setItem(TIMER_STORE,JSON.stringify(activeTimer));
+  if(!document.hidden&&navigator.vibrate)navigator.vibrate([200,100,200]);
+ }
+}
+$('persistentTimerStop').onclick=stopCookingTimer;
+cookTicker=setInterval(updateCookingTimer,1000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateCookingTimer()});
 function openCooking(r){cookRecipe=r;cookIndex=0;view('cook');renderCooking()}
 function durationStep(t){const m=fold(t).match(/(\d+)\s*(minutes?|mins?|heures?|h)\b/);return m?Math.min(240,Number(m[1])*(m[2].startsWith('h')?60:1)):0}
-function renderCooking(){clearInterval(cookTicker);cookTicker=null;cookEnd=0;if(!cookRecipe)return;const steps=cookRecipe.steps||[];const step=steps[cookIndex];$('cookTitle').textContent=cookRecipe.title;$('cookContent').innerHTML=step?`<div class="panel"><p class="muted">Étape ${cookIndex+1} sur ${steps.length}</p><progress value="${cookIndex+1}" max="${steps.length}"></progress>${safeUrl(step.image)?`<img class="hero" src="${esc(safeUrl(step.image))}" alt="">`:''}<p class="cooktext">${esc(step.text)}</p>${durationStep(step.text)?`<button id="startTimer" class="secondary">⏱ Lancer ${durationStep(step.text)} min</button>`:''}<div class="timercontrols"><div class="timerreadout" id="timerReadout"></div><button class="danger" id="stopTimer" hidden>■ STOP</button></div><div class="rowbuttons"><button class="secondary" id="prevStep" ${cookIndex===0?'disabled':''}>← Précédent</button><button class="primary" id="nextStep">${cookIndex===steps.length-1?'Terminer':'Suivant →'}</button></div></div>`:'<p>Aucune étape disponible.</p>';$('cookBack').onclick=()=>{clearInterval(cookTicker);openRecipe(cookRecipe.id)};if(!step)return;$('prevStep').onclick=()=>{cookIndex--;renderCooking()};$('nextStep').onclick=()=>{if(cookIndex===steps.length-1){clearInterval(cookTicker);openRecipe(cookRecipe.id)}else{cookIndex++;renderCooking()}};$('stopTimer').onclick=()=>{clearInterval(cookTicker);cookTicker=null;cookEnd=0;$('timerReadout').textContent='Minuteur arrêté';$('stopTimer').hidden=true};if($('startTimer'))$('startTimer').onclick=()=>{ $('stopTimer').hidden=false;cookEnd=Date.now()+durationStep(step.text)*60000;clearInterval(cookTicker);const update=()=>{const rem=Math.max(0,Math.ceil((cookEnd-Date.now())/1000));const el=$('timerReadout');if(el)el.textContent=rem?`⏱ ${Math.floor(rem/60)}:${String(rem%60).padStart(2,'0')}`:'⏰ Temps écoulé !';if(!rem){clearInterval(cookTicker);cookTicker=null;const stop=$('stopTimer');if(stop)stop.hidden=true;if(navigator.vibrate)navigator.vibrate([200,100,200])}};update();cookTicker=setInterval(update,1000)}}
-$('resetBtn').onclick=()=>{if(!confirm('ATTENTION : toutes les recettes personnelles, les recettes téléchargées, les favoris, notes, coches, courses, planning et réglages de cet appareil seront effacés. Continuer ?'))return;const word=prompt('Dernière confirmation : écris EFFACER pour réinitialiser Whats\'Eat?');if(word!=='EFFACER')return;localStorage.removeItem(STORE);location.reload()};
+function renderCooking(){
+ if(!cookRecipe)return;
+ const steps=cookRecipe.steps||[],step=steps[cookIndex];
+ $('cookTitle').textContent=cookRecipe.title;
+ $('cookContent').innerHTML=step?`<div class="panel"><p class="muted">Étape ${cookIndex+1} sur ${steps.length}</p><progress value="${cookIndex+1}" max="${steps.length}"></progress>${safeUrl(step.image)?`<img class="hero" src="${esc(safeUrl(step.image))}" alt="">`:''}<p class="cooktext">${esc(step.text)}</p>${durationStep(step.text)?`<button id="startTimer" class="secondary">⏱ Lancer ${durationStep(step.text)} min</button>`:''}<div class="rowbuttons"><button class="secondary" id="prevStep" ${cookIndex===0?'disabled':''}>← Précédent</button><button class="primary" id="nextStep">${cookIndex===steps.length-1?'Terminer':'Suivant →'}</button></div></div>`:'<p>Aucune étape disponible.</p>';
+ $('cookBack').onclick=()=>openRecipe(cookRecipe.id);
+ if(!step)return;
+ $('prevStep').onclick=()=>{cookIndex--;renderCooking()};
+ $('nextStep').onclick=()=>{if(cookIndex===steps.length-1)openRecipe(cookRecipe.id);else{cookIndex++;renderCooking()}};
+ if($('startTimer'))$('startTimer').onclick=()=>{
+  if(activeTimer&&activeTimer.end>Date.now()&&!confirm('Un minuteur est déjà en cours. Le remplacer ?'))return;
+  startCookingTimer(durationStep(step.text));
+ };
+ updateCookingTimer();
+}
+updateCookingTimer();
+$('resetBtn').onclick=()=>{if(!confirm('ATTENTION : toutes les recettes personnelles, les recettes téléchargées, les favoris, notes, coches, courses, planning et réglages de cet appareil seront effacés. Continuer ?'))return;const word=prompt('Dernière confirmation : écris EFFACER pour réinitialiser Whats\'Eat?');if(word!=='EFFACER')return;localStorage.removeItem(STORE);localStorage.removeItem(TIMER_STORE);location.reload()};
 
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)sync()});render();sync(true);if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});

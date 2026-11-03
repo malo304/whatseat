@@ -14,3 +14,6 @@
 .timercontrols{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:10px 0}
 .timercontrols [hidden]{display:none!important}
 .aboutpanel .muted{font-size:.86rem}
+
+/* V3.4.2 : bandeau minuteur global, indépendant de l'étape */
+.persistent-timer{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:14px;background:#183c2a;color:#fff;border:1px solid #68b78a;border-radius:12px;padding:10px 14px;margin:8px auto;max-width:1100px;box-shadow:0 4px 16px #0004}.persistent-timer.hidden{display:none!important}.persistent-timer>div{display:flex;flex-direction:column;gap:2px;min-width:0}.persistent-timer strong{font-size:1.5rem;font-variant-numeric:tabular-nums}.persistent-timer small{opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.persistent-timer .timer-label{font-size:.8rem;opacity:.85}.persistent-timer button{flex-shrink:0}
