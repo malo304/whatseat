@@ -19,3 +19,7 @@ IMPORTANT :
 
 Déploiement de test recommandé : branche ou dépôt de test séparé, puis contrôle des fonctionnalités
 sur iPhone et Samsung. Ne remplacez pas le site public avant validation.
+
+Correctif V4.0.1 : fermeture de secours du splash screen, même en cas d’erreur JavaScript, et actualisation du cache PWA.
+
+V4.0.2 : Splash screen remplacé par le visuel approuvé, suppression de la présentation simplifiée, mise à jour du cache.
