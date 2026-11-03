@@ -2,13 +2,15 @@
 """Best-effort import of public HelloFresh FR Recipe JSON-LD. No bypass, no private API.
 Run periodically on a server or GitHub Actions; inspect resulting recipes.json.
 """
-import json, re, time, urllib.request, urllib.parse, xml.etree.ElementTree as ET
+import json, re, time, os, gzip, urllib.request, urllib.parse, xml.etree.ElementTree as ET
 from html import unescape
 from pathlib import Path
 from html.parser import HTMLParser
 ROOT='https://www.hellofresh.fr'
 UA='WhatsEatPersonalRecipeReader/1.0 (public pages only)'
-LIMIT=250
+MAX_NEW_PER_RUN = max(1, int(os.getenv("WHATSEAT_MAX_NEW", "100")))
+MAX_SITEMAPS = max(1, int(os.getenv("WHATSEAT_MAX_SITEMAPS", "300")))
+MAX_DISCOVERED = max(1000, int(os.getenv("WHATSEAT_MAX_DISCOVERED", "50000")))
 class Scripts(HTMLParser):
  def __init__(self): super().__init__();self.active=False;self.buf='';self.data=[]
  def handle_starttag(self,tag,attrs):
@@ -57,45 +59,79 @@ def parse_recipe(url):
     else:steps.append({'text':text(x),'image':''})
    return {'id':url,'title':name,'url':url,'image':image,'minutes':duration(item.get('totalTime') or item.get('cookTime')),'servings':2,'type':'Autre','ingredient':'Autre','items':[{'quantity':'','unit':'','name':text(x)} for x in ingredients],'utensils':[],'steps':[s for s in steps if s['text']]}
  return None
+def canonical(url):
+ parsed=urllib.parse.urlparse(url)
+ if parsed.scheme not in ('http','https') or parsed.hostname not in ('hellofresh.fr','www.hellofresh.fr'):
+  return None
+ path=parsed.path.rstrip('/')
+ if not re.match(r'^/recipes/[^/]+$',path):return None
+ # Ignore category pages and navigation endpoints, retain recipe detail pages.
+ slug=path.split('/')[-1]
+ if not re.search(r'-[a-f0-9]{12,}$',slug,re.I):return None
+ return ROOT+path
+
 def discover():
- # Public sitemap discovery; may change or be blocked.
- queue=[ROOT+'/robots.txt'];sitemaps=[]
+ # Traverse all publicly advertised sitemaps, not just the first 250 recipes.
+ sitemaps=[]
  try:
-  robots=get(queue[0]);sitemaps=re.findall(r'(?im)^sitemap:\s*(\S+)',robots)
- except Exception:pass
+  robots=get(ROOT+'/robots.txt')
+  sitemaps=re.findall(r'(?im)^sitemap:\s*(\S+)',robots)
+ except Exception as exc:print('robots.txt inaccessible:',exc)
  if not sitemaps:sitemaps=[ROOT+'/sitemap.xml']
- urls=[];seen=set()
- while sitemaps and len(seen)<80 and len(urls)<LIMIT:
+ urls=[];seen_sitemaps=set();seen_urls=set()
+ while sitemaps and len(seen_sitemaps)<MAX_SITEMAPS and len(urls)<MAX_DISCOVERED:
   sitemap=sitemaps.pop(0)
-  if sitemap in seen:continue
-  seen.add(sitemap)
+  if sitemap in seen_sitemaps:continue
+  parsed=urllib.parse.urlparse(sitemap)
+  if parsed.hostname not in ('hellofresh.fr','www.hellofresh.fr'):continue
+  seen_sitemaps.add(sitemap)
   try:
-   xml=get(sitemap);root=ET.fromstring(xml)
-   locs=[x.text for x in root.iter() if x.tag.endswith('loc') and x.text]
-   for loc in locs:
-    if loc.endswith('.xml') or '.xml?' in loc:sitemaps.append(loc)
-    elif '/recipes/' in loc and urllib.parse.urlparse(loc).netloc.endswith('hellofresh.fr'):urls.append(loc)
-  except Exception as exc:print('Sitemap inaccessible:',sitemap,exc)
- return list(dict.fromkeys(urls))[:LIMIT]
+   req=urllib.request.Request(sitemap,headers={'User-Agent':UA,'Accept-Language':'fr-FR,fr;q=0.9'})
+   with urllib.request.urlopen(req,timeout=25) as response:
+    payload=response.read(12_000_000)
+   if payload[:2]==b'\x1f\x8b':payload=gzip.decompress(payload)
+   xml=payload.decode('utf-8','replace')
+   doc=ET.fromstring(xml)
+   for element in doc.iter():
+    if not element.tag.endswith('loc') or not element.text:continue
+    loc=element.text.strip()
+    if re.search(r'\.xml(?:\.gz)?(?:\?|$)',urllib.parse.urlparse(loc).path,re.I):
+     if loc not in seen_sitemaps:sitemaps.append(loc)
+    else:
+     normalized=canonical(loc)
+     if normalized and normalized not in seen_urls:
+      seen_urls.add(normalized);urls.append(normalized)
+  except Exception as exc:print('Sitemap inaccessible:',sitemap,str(exc)[:140])
+ print('Sitemaps inspectés:',len(seen_sitemaps),'URLs de recettes découvertes:',len(urls))
+ return urls
+
 def main():
  path=Path(__file__).resolve().parents[1]/'recipes.json';existing=[]
  if path.exists():
-  try:existing=json.loads(path.read_text()).get('recipes',[])
-  except Exception:pass
- recipes={r['url']:r for r in existing if r.get('url')};found=discover();print('URLs publiques trouvées:',len(found))
- for i,url in enumerate(found):
-  if url in recipes:
-   old=recipes[url]
-   old['title']=unescape(old.get('title',''))
-   for ing in old.get('items',[]):ing['name']=unescape(ing.get('name',''))
-   for step in old.get('steps',[]):step['text']=unescape(step.get('text',''))
-   continue
+  try:existing=json.loads(path.read_text(encoding='utf-8')).get('recipes',[])
+  except Exception as exc:raise RuntimeError('Catalogue existant illisible, arrêt de sécurité') from exc
+ # Keep the existing order, IDs, nutrition and every user-facing recipe field.
+ recipes=list(existing)
+ known={canonical(r.get('url','')) for r in recipes if isinstance(r,dict)}
+ known.discard(None)
+ found=discover()
+ new_count=0;failed=0
+ for url in found:
+  if url in known:continue
+  if new_count>=MAX_NEW_PER_RUN:break
   try:
-   r=parse_recipe(url)
-   if r:recipes[url]=r;print('Recette',i+1,r['title'])
-  except Exception as exc:print('Page ignorée:',url,str(exc)[:100])
-  time.sleep(.5)
- # Preserve previously imported data if website is unavailable.
- path.write_text(json.dumps({'recipes':list(recipes.values())},ensure_ascii=False,indent=2)+'\n')
- print('Recettes enregistrées:',len(recipes))
+   recipe=parse_recipe(url)
+   if recipe:
+    recipes.append(recipe);known.add(url);new_count+=1
+    print('Nouvelle recette',new_count,recipe['title'])
+  except Exception as exc:
+   failed+=1;print('Page ignorée:',url,str(exc)[:120])
+  finally:time.sleep(.5)
+ # Never replace the catalogue with an empty result after a failed discovery.
+ if new_count:
+  temp=path.with_suffix('.json.tmp')
+  temp.write_text(json.dumps({'recipes':recipes},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+  temp.replace(path)
+ print(f'Bilan : {len(existing)} conservées, {new_count} nouvelles, {failed} pages en erreur, {len(recipes)} au total.')
+ if not found:print('Aucune URL découverte : catalogue préservé.')
 if __name__=='__main__':main()
