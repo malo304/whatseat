@@ -23,3 +23,32 @@ body{background:linear-gradient(90deg,#A9C5A6 0%,#8FAF90 100%) fixed!important;c
 
 /* Les éléments d’interface doivent rester lisibles sur le sauge B. */
 .top .brand h1,.top .brand h1 span,.back,#detailView h1,#detailView h2{color:#173B27!important}
+
+/* V4.1.2 : wordmark officiel et splash adaptable à tous les formats */
+.top .brand{min-width:0;flex:1;gap:8px}
+.top .brand>div{min-width:0;flex:1}
+.top .brand .logo{width:clamp(42px,12vw,58px);height:clamp(42px,12vw,58px);flex-shrink:0}
+.top .brand .wordmark-title{margin:0;line-height:0;min-width:0}
+.top .brand .wordmark-img{display:block;width:100%;height:auto;max-width:245px;max-height:55px;object-fit:contain;object-position:left center}
+.top .header-actions{flex-shrink:0;gap:6px}
+.top .iconbtn{width:40px;height:40px;flex-shrink:0}
+@media(max-width:390px){.top{gap:5px}.top .brand{gap:5px}.top .iconbtn{width:36px;height:36px}.top .brand .logo{width:42px;height:42px}}
+.splash{background:#d8f0d6;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.splash .splash-frame{position:relative;width:min(100vw,75dvh);max-height:100dvh;aspect-ratio:1086/1448;flex:none;overflow:hidden}
+.splash .splash-artwork{display:block;width:100%;height:100%;object-fit:contain;object-position:center;animation:splashArtworkIntro .7s ease-out both}
+.splash .splash-spinner{position:absolute;left:48.7%;top:77.4%;width:8.2%;aspect-ratio:1;transform:translate(-50%,-50%);animation:whatseatSpin 1.2s linear infinite}
+.splash .splash-spinner i{position:absolute;left:45%;top:0;width:12%;height:12%;border-radius:50%;background:#0d5830;transform-origin:50% 420%;}
+.splash .splash-spinner i:nth-child(1){transform:rotate(0deg);opacity:0.4}
+.splash .splash-spinner i:nth-child(2){transform:rotate(30deg);opacity:0.46}
+.splash .splash-spinner i:nth-child(3){transform:rotate(60deg);opacity:0.51}
+.splash .splash-spinner i:nth-child(4){transform:rotate(90deg);opacity:0.57}
+.splash .splash-spinner i:nth-child(5){transform:rotate(120deg);opacity:0.62}
+.splash .splash-spinner i:nth-child(6){transform:rotate(150deg);opacity:0.68}
+.splash .splash-spinner i:nth-child(7){transform:rotate(180deg);opacity:0.73}
+.splash .splash-spinner i:nth-child(8){transform:rotate(210deg);opacity:0.78}
+.splash .splash-spinner i:nth-child(9){transform:rotate(240deg);opacity:0.84}
+.splash .splash-spinner i:nth-child(10){transform:rotate(270deg);opacity:0.89}
+.splash .splash-spinner i:nth-child(11){transform:rotate(300deg);opacity:0.95}
+.splash .splash-spinner i:nth-child(12){transform:rotate(330deg);opacity:1.0}
+@keyframes whatseatSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.splash .splash-spinner{animation:none}}
