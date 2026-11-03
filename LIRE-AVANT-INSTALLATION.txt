@@ -1,0 +1,10 @@
+Whats'Eat? V4.1.5 - Correctif ciblé
+
+1. Sauvegarder vos données depuis Paramètres > Sauvegarde.
+2. Extraire ce ZIP et remplacer uniquement les 5 fichiers à la RACINE du dépôt GitHub.
+3. NE PAS remplacer recipes.json, ni .github/workflows/sync.yml, ni scripts/.
+4. Attendre le déploiement GitHub Pages puis relancer l'application.
+
+Modifications : À propos, contraste des étapes, raccourci Déjà réalisées, suggestions Pour vous basées sur les notes, exclusion automatique des produits courants des courses, marges des boutons Planning.
+Les ingrédients des recettes et les articles déjà ajoutés restent inchangés.
+Les recommandations fonctionnent sans compte externe et deviennent personnalisées après les premières notes.

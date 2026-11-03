@@ -69,3 +69,17 @@ body{background:linear-gradient(90deg,#A9C5A6 0%,#8FAF90 100%) fixed!important;c
 button.back,.back{background:transparent!important;border:0!important;box-shadow:none!important;color:#173B27!important;padding:8px 0 12px!important;border-radius:0!important}
 button.back:hover,.back:focus-visible{background:transparent!important}
 @media(max-width:420px){.top .brand .wordmark-img{max-width:100%}}
+
+/* V4.1.5 — raccourcis, étapes, planning */
+.recipe-toolbar{align-items:flex-start;flex-wrap:wrap;gap:10px}
+.home-shortcuts{display:flex;flex-wrap:wrap;gap:7px;justify-content:flex-end}
+.home-shortcuts button{font-size:12px;padding:9px 10px;border-radius:12px;font-weight:700;min-height:40px}
+.made-pill{background:#D1E3CE;color:#173B27;border:1px solid #9FBE9E}
+.made-pill.selected{background:#A7CDA4;border-color:#42764C}
+.recommend-pill{background:#E7E8F5;color:#343D72;border:1px solid #C7C9E5}
+.recommend-pill.selected{background:#C7CBEF;border-color:#737BB7}
+#detailView .step{background:#F3F8F1!important;border:1px solid #C4D7C2!important;color:#233B2B!important}
+#detailView .step h4{color:#173B27!important}
+#detailView .step p{color:#27352C!important;line-height:1.65}
+#generatePlan,#planShopping{margin-top:20px}
+@media(max-width:430px){.recipe-toolbar{display:block}.home-shortcuts{justify-content:flex-start;margin-top:8px}.home-shortcuts button{font-size:11px;padding:9px 8px}}
