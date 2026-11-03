@@ -1,0 +1,29 @@
+Whats'Eat? V3.4 — mise à jour depuis V3.3
+
+IMPORTANT : sauvegarder les données personnelles via Paramètres > Exporter mes données avant installation.
+
+Mettre à jour dans le dépôt GitHub malo304/whatseat les fichiers suivants :
+- index.html
+- app.js
+- styles.css
+- sw.js
+
+Ne PAS remplacer ni supprimer recipes.json : il contient les recettes HelloFresh.
+Ne PAS remplacer le workflow GitHub Actions, les icônes ou les autres fichiers.
+
+Attendre que GitHub Pages ait publié la nouvelle version. Ouvrir ensuite le site dans Safari, puis relancer l'application installée sur iPhone (parfois deux ouvertures sont nécessaires pour actualiser le service worker).
+
+Fonctionnalités :
+- Quantités ajustées lorsque le texte d'ingrédient commence par une quantité reconnaissable (les unités non standard restent inchangées).
+- Ustensiles déduits des étapes et fusionnés avec ceux déjà renseignés.
+- Catégories sucrées dans le formulaire et dans les filtres.
+- Réalisée + notes 1-5, enregistrées localement.
+- Liste de courses, planning lundi-dimanche, ingrédients disponibles, mode pas à pas, minuteur.
+- Paramètres simplifiés, synchronisation manuelle conservée, réinitialisation locale à double confirmation.
+
+LIMITES :
+- Les recettes personnelles, notes, planning et courses restent sur cet appareil ; les exporter pour les sauvegarder.
+- Le minuteur fonctionne tant que l'application est active ; iOS peut suspendre les alertes en arrière-plan.
+- Les quantités importées depuis HelloFresh ne sont pas toutes dans un format exploitable ; vérifier les quantités et les unités avant de cuisiner.
+- Le tri « ce que j'ai » compare les noms d'ingrédients et reste indicatif.
+- La réinitialisation locale ne supprime pas le catalogue public hébergé sur GitHub, qui sera téléchargé à nouveau.
