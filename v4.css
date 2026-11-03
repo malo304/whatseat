@@ -59,3 +59,13 @@ body{background:linear-gradient(90deg,#A9C5A6 0%,#8FAF90 100%) fixed!important;c
 .top .brand .wordmark-title{margin:0;line-height:1;display:flex;align-items:center}
 .top .brand .wordmark-img{display:block;max-width:100%;height:auto}
 @media(max-width:420px){.top .brand{gap:7px}.top .brand .logo{width:44px;height:44px;flex-shrink:0}.top .brand .wordmark-img{max-width:min(42vw,175px)}}
+
+/* V4.1.4 : cohérence du thème et signature officielle */
+.top .brand{display:flex;align-items:center;gap:9px;min-width:0;flex:1}
+.top .brand>div{display:flex;align-items:center;flex:1;min-width:0}
+.top .brand .wordmark-title{margin:0;line-height:0;display:flex;align-items:center;min-width:0;width:100%}
+.top .brand .wordmark-img{display:block;width:100%;max-width:245px;max-height:56px;height:auto;object-fit:contain;object-position:left center}
+.top .brand p{display:none!important}
+button.back,.back{background:transparent!important;border:0!important;box-shadow:none!important;color:#173B27!important;padding:8px 0 12px!important;border-radius:0!important}
+button.back:hover,.back:focus-visible{background:transparent!important}
+@media(max-width:420px){.top .brand .wordmark-img{max-width:100%}}

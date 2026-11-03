@@ -43,8 +43,9 @@ def nutrition_from_page(html):
             kcal = numeric(nutrition.get('calories'))
             protein = numeric(nutrition.get('proteinContent'))
             # JSON-LD Recipe nutrition is per serving according to Schema.org.
-            if kcal is not None and 0 < kcal < 5000 and protein is not None and 0 <= protein < 500:
-                return round(kcal), round(protein, 1)
+            if (kcal is not None and 0 < kcal < 5000) or (protein is not None and 0 <= protein < 500):
+                return (round(kcal) if kcal is not None and 0 < kcal < 5000 else None,
+                        round(protein, 1) if protein is not None and 0 <= protein < 500 else None)
     return None
 
 def main():
@@ -65,11 +66,15 @@ def main():
                 missing += 1
                 continue
             kcal, protein = result
-            if recipe.get('kcal') is None:
+            changed = False
+            if recipe.get('kcal') is None and kcal is not None:
                 recipe['kcal'] = kcal
-            if recipe.get('protein') is None:
+                changed = True
+            if recipe.get('protein') is None and protein is not None:
                 recipe['protein'] = protein
-            updated += 1
+                changed = True
+            if changed:
+                updated += 1
             print(f'[{i}/{len(recipes)}] {recipe.get("title", "")[:55]} : {kcal} kcal, {protein} g')
         except Exception as exc:
             failed += 1
