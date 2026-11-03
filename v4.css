@@ -52,3 +52,10 @@ body{background:linear-gradient(90deg,#A9C5A6 0%,#8FAF90 100%) fixed!important;c
 .splash .splash-spinner i:nth-child(12){transform:rotate(330deg);opacity:1.0}
 @keyframes whatseatSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.splash .splash-spinner{animation:none}}
+
+/* En-tête compact : logo et signature alignés verticalement */
+.top .brand{display:flex;align-items:center;gap:10px;min-width:0}
+.top .brand>div{display:flex;align-items:center;min-width:0}
+.top .brand .wordmark-title{margin:0;line-height:1;display:flex;align-items:center}
+.top .brand .wordmark-img{display:block;max-width:100%;height:auto}
+@media(max-width:420px){.top .brand{gap:7px}.top .brand .logo{width:44px;height:44px;flex-shrink:0}.top .brand .wordmark-img{max-width:min(42vw,175px)}}
