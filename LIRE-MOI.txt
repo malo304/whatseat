@@ -1,0 +1,4 @@
+WhatsEat V4.1.5.2
+Remplacer uniquement index.html et sw.js à la racine du dépôt GitHub.
+Conserver les fichiers v4.js et app.js déjà installés (V4.1.5.1), ainsi que recipes.json, scripts/ et .github/.
+Modifications : version complète dans À propos et précision sur le filtre avancé dans Mon équipement.
