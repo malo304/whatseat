@@ -60,3 +60,7 @@ La barre de navigation inférieure a été supprimée. Le bouton maison en haut 
 7. Pour tester la collecte : **Actions → Synchroniser les recettes publiques → Run workflow**. Vérifier les journaux et `recipes.json`. Si le site bloque ou ne fournit pas les données structurées, aucune recette ne sera récupérée. Les exécutions planifiées sont soumises aux limites GitHub.
 
 **Important** : GitHub Pages est public et ne constitue pas un hébergement privé. Les recettes personnelles ajoutées dans l’application restent dans le navigateur local tant qu’elles ne sont pas exportées, mais une suppression des données Safari peut les effacer. Exporter régulièrement une sauvegarde. Le collecteur n’est pas une intégration officielle HelloFresh ; il faut respecter les conditions du site et les droits sur les contenus.
+
+
+## V3.2 — iPhone Dynamic Island
+Le conteneur principal ajoute désormais `env(safe-area-inset-top)` à son espacement supérieur afin de préserver le bandeau dans la PWA iOS. Le cache du service worker a été incrémenté. Pour mettre à jour GitHub, remplacer `styles.css` et `sw.js` à la racine du dépôt, puis relancer l’application installée.
