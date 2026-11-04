@@ -1,0 +1,45 @@
+/* Whats'Eat? V4.4 — surcouche de présentation */
+.top{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.top .brand{flex:0 1 auto;max-width:46%;gap:4px}
+.top .brand .logo{display:none}
+.top .brand>div{flex:0 1 auto}
+.top .brand .wordmark-img{width:100%;max-width:220px;max-height:60px}
+#searchPanel{flex:1;min-width:0;margin:0;height:44px;border-radius:16px;padding:0 10px;background:#fff;border:1px solid #8ba98c}
+#searchPanel input{font-size:13px;color:#173B27!important;min-width:0}
+#searchPanel input::placeholder{color:#617969}
+#searchPanel span{font-size:20px;color:#24583A}
+#searchPanel button{color:#24583A}
+.bottom-nav button{min-width:0;padding:5px 2px}
+.bottom-nav button span{font-size:clamp(9px,2.5vw,12px)}
+.bottom-nav .nav-home .nav-art{width:32px;height:32px}
+.bottom-nav .nav-home span{font-weight:800}
+#settingsView .field,#settingsView .field label,#settingsView label,#kitchenView .pantryresult button,#kitchenView .pantryresult span,.filters label{color:#173B27!important}
+#settingsView select,#settingsView input,#settingsView textarea{color:#173B27;background:#fff}
+#kitchenView .pantryresult button{font-weight:700}
+.filter-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px}
+#resetAdvanced{border:0;background:none;box-shadow:none;color:#24583A;padding:8px;font-size:13px;text-decoration:underline}
+#applyAdvanced{background:#24583A;color:white;border-color:#24583A}
+.donation-panel{border:2px solid #a5c5a5;background:#f5faf3}
+#donationOptions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.donation-link{display:flex;flex-direction:column;gap:4px;justify-content:center;padding:12px;border:1px solid #8eaf8d;background:#fff;border-radius:12px;text-decoration:none;color:#173B27;font-size:13px}
+.donation-link strong{font-size:17px}
+#donationOptions .muted{grid-column:1/-1}
+.v44-plan-card{display:flex;gap:12px;align-items:stretch;background:#fff;border:1px solid #bfd3bf;border-radius:14px;padding:10px;margin:10px 0}
+.v44-plan-card img,.v44-plan-placeholder{width:100px;height:100px;object-fit:cover;border-radius:9px;flex-shrink:0;background:#e5f0e1}
+.v44-plan-body{min-width:0;flex:1;display:flex;flex-direction:column;gap:5px}
+.v44-plan-body strong{font-size:14px;color:#173B27}
+.v44-plan-body small{color:#536d5c}
+.v44-plan-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.v44-plan-actions button{background:#e6efe6;border:1px solid #a7c7a7;border-radius:8px;color:#173B27;padding:6px 9px;font-size:12px}
+.v44-pick-hint{background:#e8f5df;border:1px solid #719d72;color:#173B27;border-radius:12px;padding:12px;margin-bottom:12px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.v44-pick-hint button{background:#fff;color:#173B27;border:1px solid #a7c7a7;border-radius:8px;padding:7px}
+.v44-shopping-row{display:flex;gap:10px;align-items:center;flex-wrap:nowrap}
+.v44-shop-text{flex:1;min-width:0;display:flex;flex-direction:column}
+.v44-shop-text strong{font-size:13px;overflow-wrap:anywhere}
+.v44-shop-text small{color:#536d5c}
+.v44-qty{width:70px!important;max-width:70px!important;border:1px solid #aac6a9;border-radius:8px;background:#fff!important;color:#173B27!important;padding:8px}
+.v44-added{background:#d7ebd6!important;color:#173B27!important;border-color:#80a984!important}
+#startTimer{margin-bottom:18px!important;background:#dcead9!important;color:#173B27!important}
+@media(max-width:390px){.top{gap:6px}.top .brand{max-width:43%}#searchPanel{height:40px;padding:0 7px}#searchPanel input{font-size:11px}.bottom-nav button span{font-size:9px}}
+
+#v44Dialog{border:1px solid #8cae8c;border-radius:18px;max-width:min(90vw,380px);padding:0;color:#173B27;background:#fff;box-shadow:0 12px 45px #0004}#v44Dialog::backdrop{background:#10291d99}.v44-dialog-body{padding:24px;text-align:center}.v44-dialog-body h3{margin:0 0 10px;color:#173B27}.v44-dialog-body p{white-space:pre-wrap}.v44-dialog-body button{background:#24583A;color:#fff;margin-top:10px}

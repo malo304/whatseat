@@ -103,7 +103,7 @@ $('planner').onclick=e=>{const open=e.target.closest('[data-plan-open]'),remove=
 $('planShopping').onclick=()=>{const ids=Object.values(state.planner||{}).filter(Boolean);if(!ids.length)return alert('Aucun repas programmé.');ids.forEach(id=>{const r=allRecipes().find(x=>x.id===id);if(r)addShopping(r,v4.weeklyPeople)});alert('Ingrédients ajoutés à la liste de courses.')};
 // Afficher une seule barre d'en-tête, conserver la navigation de l'historique.
 const originalSettings=settings;
-settings=function(){originalSettings();document.querySelector('#settingsView [data-home]').onclick=v4GoBack};
+settings=function(){originalSettings();document.querySelector('#settingsView [data-home]')?.addEventListener('click',v4GoBack)};
 const originalRenderCooking=renderCooking;
 renderCooking=function(){originalRenderCooking();$('cookBack').onclick=v4GoBack};
 // Plages sans chevauchement : <=20, 21..40, >40 minutes.

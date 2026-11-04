@@ -1,0 +1,27 @@
+Whats'Eat? V4.4 — VERSION BÊTA DE TEST
+
+Réalisé :
+- Nouveau logo transparent à meilleur contraste.
+- Barre de recherche permanente dans l'en-tête de l'accueil.
+- Navigation à cinq onglets (Planning, Courses, Accueil, Frigo, Paramètres).
+- Filtres de temps déplacés dans les filtres avancés SANS changer les valeurs ni les seuils de V4.3 (Tous, 20 min, 40 min, 60 min et +).
+- Boutons Appliquer et Réinitialiser plus discret.
+- Contraste de certains textes corrigé.
+- L'ancien module Frigo déplacé dans son onglet, sans doublon de titre.
+- Liens Stripe des cinq dons dans Paramètres.
+- Planning simplifié avec génération sans créneaux, photos et remplacement depuis l'accueil.
+- Modification des quantités de la liste de courses et partage natif/copie.
+- État visuel de certains boutons d'ajout aux courses/planning.
+- Fenêtres d'information personnalisées ; confirmations sensibles conservées en natif.
+
+À développer ou finaliser avant V4.4 définitive :
+- Inventaire intelligent Frigo/Placards, scan codes-barres, lecture DLC, rappels.
+- Plusieurs minuteries simultanées.
+- Comptage fiable des recettes par ingrédient dans la liste de courses.
+- Remplacement de toutes les confirmations/prompt natifs.
+- Ajustements et tests de non-régression sur iPhone, Android, ordinateur.
+
+IMPORTANT : NE PAS PUBLIER DIRECTEMENT CETTE BÊTA EN PRODUCTION.
+Faire d'abord une sauvegarde via Paramètres > Exporter mes données sur la V4.3.
+La nouvelle génération du planning remplace le planning actuel après confirmation.
+Les fichiers .github/workflows, scripts de synchronisation et recettes.json sont conservés.
