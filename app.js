@@ -112,8 +112,8 @@ function renderCooking(){
  $('prevStep').onclick=()=>{cookIndex--;renderCooking()};
  $('nextStep').onclick=()=>{if(cookIndex===steps.length-1)openRecipe(cookRecipe.id);else{cookIndex++;renderCooking()}};
  if($('startTimer'))$('startTimer').onclick=()=>{
-  if(activeTimer&&activeTimer.end>Date.now()&&!confirm('Un minuteur est déjà en cours. Le remplacer ?'))return;
-  startCookingTimer(durationStep(step.text));
+  if(window.whatseatTimers)window.whatseatTimers.start(durationStep(step.text),cookRecipe,cookIndex+1);
+  else startCookingTimer(durationStep(step.text));
  };
  updateCookingTimer();
 }

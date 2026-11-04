@@ -1,0 +1,7 @@
+WhatsEat V4.4.2 - Correctifs
+- Minuteurs independants simultanes, pause, suppression, persistance locale.
+- Planning consultable et etiquettes de jours pour les recettes generees (repartition visuelle par ordre, pas de calendrier date).
+- Dialogues personnalises pour suppression, sauvegarde et regeneration du planning.
+- Encart de dons en bas des fiches recettes et a la derniere etape de cuisson.
+Limites : les alertes sonores en arriere-plan iOS ne sont pas garanties. Certains anciens messages de confirmation peuvent encore etre natifs dans les flux secondaires.
+Tester sur un site de preproduction avant de remplacer la version publique.
