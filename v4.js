@@ -5,6 +5,13 @@ state.v4??={weeklyCount:5,weeklyPeople:state.servings||2,equipment:[],nutritionE
 const v4=state.v4;
 let advancedOpen=false,selectedSlots=new Set(),v4Origin='home',v4Screen='home',v4Navigating=false;
 let v415Collection='all';
+// Pagination et ordre quotidien stable (indépendant des ouvertures de fiches).
+const V43_PAGE=20;
+let v43Shown=V43_PAGE,v43LastCriteria='',v43HomeScroll=0;
+function v43Day(){const d=new Date();return [d.getFullYear(),d.getMonth()+1,d.getDate()].join('-')}
+function v43Hash(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function v43Criteria(){return JSON.stringify([v43Day(),v415Collection,filters.search,filters.times,filters.types,filters.ingredients,v4Filter.cal,v4Filter.protein,v4Filter.sort,v4Filter.equipmentOnly,v4.nutritionEnabled,v4.equipment])}
+
 const v4Filter={cal:'all',protein:'all',sort:'default',equipmentOnly:false};
 const v4Screens=['home','detail','settings','editor','kitchen','shopping','planning','cook'];
 function v4Navigate(screen,replace=false){
@@ -19,7 +26,7 @@ function v4Navigate(screen,replace=false){
 }
 view=v4Navigate;
 function v4GoBack(){if(history.state?.v4Screen&&history.state.v4Screen!=='home'){history.back()}else v4Navigate('home')}
-window.addEventListener('popstate',e=>{v4Navigating=true;v4Navigate(e.state?.v4Screen||'home');v4Navigating=false});
+window.addEventListener('popstate',e=>{const previous=v4Screen;v4Navigating=true;v4Navigate(e.state?.v4Screen||'home');v4Navigating=false;if(previous==='detail'&&v4Screen==='home')requestAnimationFrame(()=>window.scrollTo(0,v43HomeScroll))});
 history.replaceState({v4Screen:'home'},'',location.href);
 function v4ShowHome(){filters.favorites=false;v415Collection='all';v4Navigate('home');render()}
 home=v4ShowHome;
@@ -43,21 +50,31 @@ document.querySelectorAll('[data-settings]').forEach(b=>b.onclick=v4GoBack);
 // Le bouton retour est créé seulement lors du rendu de la fiche.
 // Modifier le rendu de détail sans casser les événements d'origine.
 const originalRenderDetail=renderDetail;
-renderDetail=function(){originalRenderDetail();$('detailBack').onclick=v4GoBack;const r=current;const container=$('detailView');container.querySelector('.v4-detail-nutrition')?.remove();const info=document.createElement('div');info.className='v4-detail-nutrition';info.textContent=`🔥 ${v4Nutrition(r,'cal')===null?'Non renseigné':v4Nutrition(r,'cal')+' kcal'} · 💪 ${v4Nutrition(r,'protein')===null?'Non renseigné':v4Nutrition(r,'protein')+' g protéines'} par portion`;const title=container.querySelector('h2,h1');if(title)title.insertAdjacentElement('afterend',info)};
+renderDetail=function(){originalRenderDetail();$('detailBack').onclick=v4GoBack;const r=current;const container=$('detailView');container.querySelector('.v4-detail-nutrition')?.remove();const info=document.createElement('div');info.className='v4-detail-nutrition';info.textContent=`🔥 ${v4Nutrition(r,'cal')===null?'Non renseigné':v4Nutrition(r,'cal')+' kcal'} · 💪 ${v4Nutrition(r,'protein')===null?'Non renseigné':v4Nutrition(r,'protein')+' g protéines'} par portion`;const title=container.querySelector('h2,h1');if(title)title.insertAdjacentElement('afterend',info);const fav=$('detailFav');if(fav)fav.classList.add('v43-detail-fav')};
 // Conserver la source de navigation lors de l'ouverture d'une fiche depuis le planning.
 const originalOpenRecipe=openRecipe;
-openRecipe=function(id){const prev=v4Screen;originalOpenRecipe(id);if(v4Screen==='detail'&&prev==='planning')v4Origin='planning';else if(prev!=='detail'&&prev!=='cook')v4Origin=prev};
+openRecipe=function(id){const prev=v4Screen;if(prev==='home')v43HomeScroll=window.scrollY;originalOpenRecipe(id);if(v4Screen==='detail'&&prev==='planning')v4Origin='planning';else if(prev!=='detail'&&prev!=='cook')v4Origin=prev};
 // Données nutritionnelles : jamais d'estimation inventée.
 function v4Nutrition(r,key){const keys=key==='cal'?['kcal','calories','caloriesPerServing']:['protein','proteins','proteinPerServing','protein_g'];for(const k of keys){const n=r[k]??r.nutrition?.[k];if(n!==undefined&&n!==null&&n!==''&&Number.isFinite(Number(n)))return Number(n)}return null}
 function v4Range(value,kind,filter){if(filter==='all')return true;if(value===null)return false;if(kind==='cal'){return filter==='lt400'?value<400:filter==='lt600'?value<600:filter==='600-800'?value>=600&&value<=800:value>800}return filter==='lt20'?value<20:filter==='20-40'?value>=20&&value<=40:value>40}
 function v4Needs(r){const text=fold([r.type,...(r.utensils||[]),...(r.steps||[]).map(s=>s.text)].join(' '));const patterns=[['Four',/\bfour\b|enfourne/],['Micro-ondes',/micro.onde/],['Plaques de cuisson',/\bpoele\b|\bcasserole\b|\bsauteuse\b|\bfaitout\b/],['Mixeur / Blender',/\bmixeur\b|\bblender\b|\bmixer\b/],['Air fryer',/air.fryer/],['Robot de cuisine',/robot de cuisine/],['Cuiseur vapeur',/cuiseur vapeur/],['Autocuiseur',/autocuiseur|cocotte.minute/],['Friteuse',/\bfriteuse\b/],['Grill',/\bgrill\b/]];return patterns.filter(([,re])=>re.test(text)).map(([n])=>n)}
 function v4Compatible(r){return v4Needs(r).every(x=>v4.equipment.includes(x))}
 const originalRender=render;
-render=function(){originalRender();$('tabFav').classList.toggle('selected',v415Collection==='favorites');$('tabMade').classList.toggle('selected',v415Collection==='made');$('tabRecommended').classList.toggle('selected',v415Collection==='recommended');for(const [id,mode] of [['tabFav','favorites'],['tabMade','made'],['tabRecommended','recommended']])$(id).setAttribute('aria-pressed',String(v415Collection===mode));$('tabFav').textContent=(filters.favorites?'♥':'♡')+' Mes favoris';document.querySelectorAll('[data-quick]').forEach(b=>b.classList.toggle('active',b.dataset.quick===filters.times));$('nutritionFilters').classList.toggle('hidden',!v4.nutritionEnabled);const active=[v4Filter.cal!=='all',v4Filter.protein!=='all',v4Filter.sort!=='default',v4Filter.equipmentOnly,filters.types.length>0,filters.ingredients.length>0].filter(Boolean).length;$('activeFilterCount').textContent=active?`(${active})`:'';
+render=function(){renderChips();$('tabFav').classList.toggle('selected',v415Collection==='favorites');$('tabMade').classList.toggle('selected',v415Collection==='made');$('tabRecommended').classList.toggle('selected',v415Collection==='recommended');for(const [id,mode] of [['tabFav','favorites'],['tabMade','made'],['tabRecommended','recommended']])$(id).setAttribute('aria-pressed',String(v415Collection===mode));$('tabFav').textContent=(filters.favorites?'♥':'♡')+' Mes favoris';document.querySelectorAll('[data-quick]').forEach(b=>b.classList.toggle('active',b.dataset.quick===filters.times));$('nutritionFilters').classList.toggle('hidden',!v4.nutritionEnabled);const active=[v4Filter.cal!=='all',v4Filter.protein!=='all',v4Filter.sort!=='default',v4Filter.equipmentOnly,filters.types.length>0,filters.ingredients.length>0].filter(Boolean).length;$('activeFilterCount').textContent=active?`(${active})`:'';
  let recipes=allRecipes().filter(matches).filter(r=>(v415Collection!=='made'||!!state.made?.[r.id])).filter(r=>(!v4.nutritionEnabled||(v4Range(v4Nutrition(r,'cal'),'cal',v4Filter.cal)&&v4Range(v4Nutrition(r,'protein'),'protein',v4Filter.protein)))&&(!v4Filter.equipmentOnly||v4Compatible(r)));
  if(v415Collection==='recommended')recipes=v415Recommendations(recipes);
  if(v4.nutritionEnabled&&v4Filter.sort!=='default'){const cal=v4Filter.sort.startsWith('cal'),asc=v4Filter.sort.endsWith('Asc');recipes.sort((a,b)=>{const x=v4Nutrition(a,cal?'cal':'protein'),y=v4Nutrition(b,cal?'cal':'protein');return x===null&&y===null?0:x===null?1:y===null?-1:(asc?x-y:y-x)})}else if(v4.equipment.length&&v415Collection!=='recommended'){recipes.sort((a,b)=>Number(v4Compatible(b))-Number(v4Compatible(a)))}
- $('resultCount').textContent=recipes.length+' recette'+(recipes.length!==1?'s':'')+(v415Collection==='made'?' déjà réalisée'+(recipes.length!==1?'s':''):v415Collection==='recommended'?' suggérée'+(recipes.length!==1?'s':''):'');$('results').innerHTML=recipes.length?recipes.map(r=>`<article class="recipe" data-open="${esc(r.id)}">${safeUrl(r.image)?`<img src="${esc(safeUrl(r.image))}" alt="" loading="lazy" onerror="this.style.display='none'">`:'<div class="imageplaceholder">🍽️</div>'}<div class="recipebody"><h3>${esc(r.title)}</h3><div class="recipestatus">${state.made?.[r.id]?'✓ Déjà faite':''} ${state.ratings?.[r.id]?'★ '+state.ratings[r.id]+'/5':''}</div><div class="v4-metrics"><span>⏱ ${esc(r.minutes||'?')} min</span><span>🔥 ${v4Nutrition(r,'cal')===null?'Non renseigné':v4Nutrition(r,'cal')+' kcal'}</span><span>💪 ${v4Nutrition(r,'protein')===null?'Non renseigné':v4Nutrition(r,'protein')+' g'}</span></div>${v4.equipment.length&&!v4Compatible(r)?'<small class="muted">⚠ Équipement manquant : '+esc(v4Needs(r).filter(x=>!v4.equipment.includes(x)).join(', '))+'</small>':''}<div class="recipefoot"><button class="heart" aria-label="Favori" data-fav="${esc(r.id)}">${state.favorites.includes(r.id)?'♥':'♡'}</button></div></div></article>`).join(''):'<div class="empty">Aucune recette ne correspond aux filtres.</div>';
+ // Le tri explicite prime sur le mélange quotidien ; « Pour vous » conserve son classement.
+ if(v415Collection!=='recommended'&&v4Filter.sort==='default'){
+   const day=v43Day();recipes.sort((a,b)=>v43Hash(day+':'+a.id)-v43Hash(day+':'+b.id));
+   if(v4.equipment.length)recipes.sort((a,b)=>Number(v4Compatible(b))-Number(v4Compatible(a)));
+ }
+ const criteria=v43Criteria();if(criteria!==v43LastCriteria){v43LastCriteria=criteria;v43Shown=V43_PAGE}
+ const total=recipes.length;recipes=recipes.slice(0,v415Collection==='recommended'?12:v43Shown);
+ $('moreRecipes').classList.toggle('hidden',v415Collection==='recommended'||recipes.length>=total);
+ $('moreRecipes').textContent='Voir 20 recettes supplémentaires';
+ $('shownCount').textContent=total?`${recipes.length} recette${recipes.length>1?'s':''} affichée${recipes.length>1?'s':''} sur ${total}`:'';
+ $('resultCount').textContent=total+' recette'+(recipes.length!==1?'s':'')+(v415Collection==='made'?' déjà réalisée'+(recipes.length!==1?'s':''):v415Collection==='recommended'?' suggérée'+(recipes.length!==1?'s':''):'');$('results').innerHTML=recipes.length?recipes.map(r=>`<article class="recipe" data-open="${esc(r.id)}">${safeUrl(r.image)?`<img src="${esc(safeUrl(r.image))}" alt="" loading="lazy" onerror="this.style.display='none'">`:'<div class="imageplaceholder">🍽️</div>'}<div class="recipebody"><h3>${esc(r.title)}</h3><div class="recipestatus">${state.made?.[r.id]?'✓ Déjà faite':''} ${state.ratings?.[r.id]?'★ '+state.ratings[r.id]+'/5':''}</div><div class="v4-metrics"><span>⏱ ${esc(r.minutes||'?')} min</span><span>🔥 ${v4Nutrition(r,'cal')===null?'Non renseigné':v4Nutrition(r,'cal')+' kcal'}</span><span>💪 ${v4Nutrition(r,'protein')===null?'Non renseigné':v4Nutrition(r,'protein')+' g'}</span></div>${v4.equipment.length&&!v4Compatible(r)?'<small class="muted">⚠ Équipement manquant : '+esc(v4Needs(r).filter(x=>!v4.equipment.includes(x)).join(', '))+'</small>':''}<div class="recipefoot"><button class="heart" aria-label="Favori" data-fav="${esc(r.id)}">${state.favorites.includes(r.id)?'♥':'♡'}</button></div></div></article>`).join(''):'<div class="empty">Aucune recette ne correspond aux filtres.</div>';
 };
 // Sélecteurs avancés et paramètres.
 for(const [id,key] of [['calFilter','cal'],['proteinFilter','protein'],['nutritionSort','sort']])$(id).onchange=e=>{v4Filter[key]=e.target.value;render()};
@@ -89,11 +106,11 @@ const originalSettings=settings;
 settings=function(){originalSettings();document.querySelector('#settingsView [data-home]').onclick=v4GoBack};
 const originalRenderCooking=renderCooking;
 renderCooking=function(){originalRenderCooking();$('cookBack').onclick=v4GoBack};
-// Réparer le filtre temps « 60 min et + » sans modifier les anciens seuils.
+// Plages sans chevauchement : <=20, 21..40, >40 minutes.
 const originalMatches=matches;
-matches=function(r){if(filters.times!=='long')return originalMatches(r);const prev=filters.times;filters.times='all';const yes=originalMatches(r)&&Number(r.minutes)>=60;filters.times=prev;return yes};
-// Écran de lancement : une nouvelle session de document, pas au retour d'arrière-plan.
-const splash=$('splash');if(matchMedia('(prefers-reduced-motion: reduce)').matches)splash.classList.add('no-motion');setTimeout(()=>splash.classList.add('splash-done'),2500);
+matches=function(r){const mode=filters.times,prev=filters.times;filters.times='all';const base=originalMatches(r);filters.times=prev;if(!base||mode==='all')return base;const n=Number(r.minutes);if(!Number.isFinite(n)||n<0||r.minutes===null||r.minutes===undefined||r.minutes==='')return false;return mode==='fast'?n<=20:mode==='medium'?n>20&&n<=40:mode==='long'?n>40:false};
+// Le splash HTML est piloté par index.html, indépendamment du chargement des recettes.
+$('moreRecipes').onclick=()=>{v43Shown+=V43_PAGE;render()};
 render();v4Navigate('home',true);
 // La recherche par ingrédients ne doit jamais modifier la présentation du planning.
 showKitchen=function(){v4Navigate('kitchen');$('pantry').value=(state.pantry||[]).join(', ');renderPantry()};

@@ -83,3 +83,22 @@ button.back:hover,.back:focus-visible{background:transparent!important}
 #detailView .step p{color:#27352C!important;line-height:1.65}
 #generatePlan,#planShopping{margin-top:20px}
 @media(max-width:430px){.recipe-toolbar{display:block}.home-shortcuts{justify-content:flex-start;margin-top:8px}.home-shortcuts button{font-size:11px;padding:9px 8px}}
+
+/* V4.3 : navigation progressive et favoris uniformes */
+.recipegrid .recipe{display:flex;flex-direction:column;min-width:0}
+.recipegrid .recipebody{display:flex;flex:1;flex-direction:column}
+.recipegrid .recipefoot{margin-top:auto;display:flex;justify-content:flex-end;align-items:flex-end}
+.recipegrid .heart{margin-left:auto;cursor:pointer}
+.v43-more{display:flex;align-items:center;flex-direction:column;gap:10px;margin:22px auto 30px;text-align:center}
+.v43-more p{margin:0;color:#345842;font-size:.92rem}
+.v43-more button{max-width:340px;width:100%;min-height:44px}
+#detailFav.v43-detail-fav{background:#F9DFE7!important;color:#A53660!important;border:1px solid #E9B8CA!important;border-radius:999px!important;font-weight:700}
+#detailFav.v43-detail-fav:hover{background:#F4CFDB!important}
+/* Fond plein écran ; logo transparent sans recadrage ; spinner CSS réel. */
+#splash.v43-splash{position:fixed;inset:0;inset:0 0 0 0;width:100%;height:100vh;height:100dvh;background:#A9C5A6;display:flex;align-items:center;justify-content:center;z-index:9999;padding:env(safe-area-inset-top) 20px env(safe-area-inset-bottom);box-sizing:border-box;overflow:hidden}
+.v43-splash-center{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;width:min(80vw,360px);max-width:100%}
+.v43-splash-logo{width:min(75vw,300px);max-width:100%;height:auto;max-height:25vh;object-fit:contain;animation:none!important}
+.v43-splash-spinner{width:42px;height:42px;box-sizing:border-box;border:5px dotted #24583B;border-right-color:transparent;border-radius:50%;animation:v43Rotate .85s linear infinite!important}
+.v43-splash-center p{margin:0;color:#173B27;font-weight:600;font-size:clamp(13px,3.5vw,16px);text-align:center}
+@keyframes v43Rotate{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.v43-splash-spinner{animation-duration:2.5s!important}}
