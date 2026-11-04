@@ -43,3 +43,18 @@
 @media(max-width:390px){.top{gap:6px}.top .brand{max-width:43%}#searchPanel{height:40px;padding:0 7px}#searchPanel input{font-size:11px}.bottom-nav button span{font-size:9px}}
 
 #v44Dialog{border:1px solid #8cae8c;border-radius:18px;max-width:min(90vw,380px);padding:0;color:#173B27;background:#fff;box-shadow:0 12px 45px #0004}#v44Dialog::backdrop{background:#10291d99}.v44-dialog-body{padding:24px;text-align:center}.v44-dialog-body h3{margin:0 0 10px;color:#173B27}.v44-dialog-body p{white-space:pre-wrap}.v44-dialog-body button{background:#24583A;color:#fff;margin-top:10px}
+
+/* V4.4.1 — correctifs visuels demandés */
+.advanced-toggle{display:flex!important;align-items:center;justify-content:flex-start!important;flex-wrap:wrap;gap:10px;margin:12px 0 14px;text-align:left!important}
+.advanced-toggle #advancedBtn{display:inline-flex;align-items:center;gap:7px;justify-content:center}
+.advanced-toggle #surprise{display:inline-flex;align-items:center;min-height:40px;padding:8px 13px;font-weight:700;background:#e9f2e8;color:#254a32;border:1px solid #c4d7c2;border-radius:25px}
+.filter-icon{flex:none}
+#settingsView .rowbuttons .filebutton{display:inline-flex;align-items:center;justify-content:center;background:#254b35!important;color:#d8f2de!important;border:1px solid #5dbf83!important;border-radius:25px!important;padding:12px 18px!important;font-weight:700!important;cursor:pointer;line-height:normal}
+#settingsView .rowbuttons #exportBtn{display:inline-flex;align-items:center;justify-content:center}
+.donation-group{border:1px solid #c4d7c2;border-radius:15px;padding:15px;margin:16px 0;background:#f6faf5}
+.donation-group h4{margin:0 0 7px;color:#173b27;font-size:17px}
+.donation-group p{margin:7px 0 13px;color:#355843!important;line-height:1.5}
+.donation-oneoff{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.donation-recurring{background:#eaf3e8;border:2px solid #6e9875}
+.donation-recurring .donation-link{max-width:300px;border-color:#548b61}
+@media(max-width:390px){.advanced-toggle{gap:7px}.advanced-toggle #advancedBtn,.advanced-toggle #surprise{font-size:12px;padding:8px 9px}}
