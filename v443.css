@@ -1,0 +1,39 @@
+/* Whats'Eat V4.4.3 — correctifs visuels, mobile et accessibilité */
+:root{--we-mist:#F0F2F3;--we-pearl:#F5F6F7;--we-soft:#FAFAF8;--we-border:#E1E5E3}
+html,body{background:var(--we-mist)}
+.panel,.recipe,.filters,.searchbox,.donation-group,.v44-plan-card,.v442-dialog-inner,#v44Dialog,.v442-donation-card{background:var(--we-pearl)}
+#detailView,.recipebody,#cookContent{color:#173B27}
+#searchPanel,#settingsView input,#settingsView textarea,#settingsView select,.v44-qty,#v442DialogInput{background:var(--we-soft)!important}
+.panel,.recipe,.filters,.v44-plan-card{border-color:var(--we-border)}
+/* iOS Safari zoome au focus quand un champ a une police <16px. */
+input:not([type=checkbox]):not([type=radio]),textarea,select,#searchPanel input{font-size:16px!important}
+/* Accueil compact, sans masquer les onglets existants ni déplacer les filtres de durée. */
+#homeView .recipe-toolbar{margin:0 0 5px;gap:4px}
+#homeView .home-shortcuts{margin-top:0}
+#homeView .advanced-toggle{margin-top:4px}
+.top{margin-bottom:7px}
+/* Minuteurs : toujours au-dessus de la navigation, y compris safe-area iPhone. */
+#v442TimerDock{position:fixed;bottom:calc(88px + env(safe-area-inset-bottom,0px));left:50%;right:auto;transform:translateX(-50%);width:min(420px,calc(100vw - 20px));max-height:min(34vh,260px);padding:6px 10px;border-width:1px;border-radius:13px;background:var(--we-soft);z-index:59}
+.v442-timer-head{padding:2px 2px 4px;font-size:13px}
+.v442-timer-head button{padding:3px 9px;min-width:32px;font-size:18px;line-height:1}
+.v442-timer{padding:5px 1px;gap:7px}
+.v442-step{flex:1;min-width:0;font-size:12px;font-weight:700;white-space:nowrap}
+.v442-clock{font-size:16px;min-width:56px;text-align:right;white-space:nowrap}
+.v442-timer button{padding:5px 7px;min-width:30px;min-height:32px;line-height:1;font-size:16px}
+@media(max-width:480px){#v442TimerDock{bottom:calc(86px + env(safe-area-inset-bottom,0px));right:auto;left:50%;width:calc(100vw - 16px);padding:5px 8px}.v442-clock{font-size:15px}}
+/* Courses : unité juste après la quantité, jamais dans la colonne du nom. */
+.v44-shopping-row{gap:7px}
+.v44-shopping-row .v44-shop-text small{display:none}
+.v443-quantity-wrap{display:flex;align-items:center;gap:4px;flex:0 0 auto;min-width:0}
+.v443-quantity-wrap .v44-qty{width:65px!important;max-width:65px!important}
+.v443-unit{font-size:13px;color:#536d5c;white-space:nowrap;max-width:55px;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:370px){.v443-quantity-wrap .v44-qty{width:53px!important;max-width:53px!important}.v443-unit{max-width:43px}}
+/* Dons : sections pleine largeur et cartes identiques, sans couper le symbole €. */
+#donationOptions{display:block!important;min-width:0}
+#donationOptions .donation-group{width:100%;margin:12px 0;padding:12px;min-width:0;background:var(--we-pearl)}
+#donationOptions .donation-oneoff{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#donationOptions .donation-link{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;min-width:0;min-height:86px;padding:9px 5px;background:var(--we-soft)}
+#donationOptions .donation-link span{font-size:13px;white-space:nowrap}
+#donationOptions .donation-link strong{font-size:16px;white-space:nowrap;overflow-wrap:normal;word-break:normal}
+#donationOptions .donation-recurring .donation-link{max-width:none;width:100%}
+@media(max-width:360px){#donationOptions .donation-link span{font-size:12px}#donationOptions .donation-link strong{font-size:15px}}

@@ -1,4 +1,4 @@
-/* Whats'Eat? V4 — extensions non destructives à partir de la V3.4.2 */
+/* Whats'Eat V4 — extensions non destructives à partir de la V3.4.2 */
 'use strict';
 const V4EQUIPMENT=['Four','Micro-ondes','Plaques de cuisson','Mixeur / Blender','Air fryer','Robot de cuisine','Cuiseur vapeur','Autocuiseur','Friteuse','Grill'];
 state.v4??={weeklyCount:5,weeklyPeople:state.servings||2,equipment:[],nutritionEnabled:false};
