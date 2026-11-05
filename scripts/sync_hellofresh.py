@@ -2,7 +2,7 @@
 """Best-effort import of public HelloFresh FR Recipe JSON-LD. No bypass, no private API.
 Run periodically on a server or GitHub Actions; inspect resulting recipes.json.
 """
-import json, re, time, os, gzip, urllib.request, urllib.parse, xml.etree.ElementTree as ET
+import json, re, time, os, gzip, unicodedata, urllib.request, urllib.parse, xml.etree.ElementTree as ET
 from html import unescape
 from pathlib import Path
 from html.parser import HTMLParser
@@ -105,13 +105,43 @@ def discover():
  print('Sitemaps inspectés:',len(seen_sitemaps),'URLs de recettes découvertes:',len(urls))
  return urls
 
+def title_key(value):
+ text=unicodedata.normalize('NFKD',unescape(str(value or '')).casefold())
+ text=''.join(ch for ch in text if not unicodedata.combining(ch))
+ return re.sub(r'[^a-z0-9]+','',text)
+
+def ingredient_key(recipe):
+ return {title_key(item.get('name','')) for item in recipe.get('items',[]) if isinstance(item,dict) and title_key(item.get('name',''))}
+
+def equivalent(a,b):
+ if title_key(a.get('title'))!=title_key(b.get('title')):return False
+ aa,bb=ingredient_key(a),ingredient_key(b)
+ # Identical normalized titles are duplicates unless both recipes demonstrably differ.
+ if aa and bb and len(aa & bb)/max(len(aa),len(bb))<.45:return False
+ return True
+
+def deduplicate(recipes):
+ kept=[];positions={};removed=[]
+ for recipe in recipes:
+  key=title_key(recipe.get('title'))
+  matches=positions.get(key,[])
+  match=next((i for i in matches if equivalent(kept[i],recipe)),None)
+  if match is None:
+   positions.setdefault(key,[]).append(len(kept));kept.append(recipe);continue
+  old=kept[match]
+  def quality(r):return (len(r.get('steps') or []),len(r.get('items') or []),bool(r.get('image')),bool(r.get('nutrition')))
+  if quality(recipe)>quality(old):kept[match]=recipe;removed.append(old.get('id'))
+  else:removed.append(recipe.get('id'))
+ return kept,removed
+
 def main():
  path=Path(__file__).resolve().parents[1]/'recipes.json';existing=[]
  if path.exists():
   try:existing=json.loads(path.read_text(encoding='utf-8')).get('recipes',[])
   except Exception as exc:raise RuntimeError('Catalogue existant illisible, arrêt de sécurité') from exc
  # Keep the existing order, IDs, nutrition and every user-facing recipe field.
- recipes=list(existing)
+ recipes,duplicates=deduplicate(list(existing))
+ print(f"Doublons existants identifiés : {len(duplicates)}")
  known={canonical(r.get('url','')) for r in recipes if isinstance(r,dict)}
  known.discard(None)
  found=discover()
@@ -122,16 +152,19 @@ def main():
   try:
    recipe=parse_recipe(url)
    if recipe:
+    
+    if any(equivalent(recipe,old) for old in recipes if title_key(old.get('title'))==title_key(recipe.get('title'))):
+     known.add(url);print('Doublon ignoré:',recipe['title']);continue
     recipes.append(recipe);known.add(url);new_count+=1
     print('Nouvelle recette',new_count,recipe['title'])
   except Exception as exc:
    failed+=1;print('Page ignorée:',url,str(exc)[:120])
   finally:time.sleep(.5)
  # Never replace the catalogue with an empty result after a failed discovery.
- if new_count:
+ if new_count or duplicates:
   temp=path.with_suffix('.json.tmp')
   temp.write_text(json.dumps({'recipes':recipes},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
   temp.replace(path)
- print(f'Bilan : {len(existing)} conservées, {new_count} nouvelles, {failed} pages en erreur, {len(recipes)} au total.')
+ print(f'Bilan : {len(existing)} au départ, {len(duplicates)} doublons retirés, {new_count} nouvelles, {failed} pages en erreur, {len(recipes)} au total.')
  if not found:print('Aucune URL découverte : catalogue préservé.')
 if __name__=='__main__':main()
