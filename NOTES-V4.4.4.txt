@@ -1,8 +1,0 @@
-Whats'Eat V4.4.4
-- Commandes minuteurs sous forme de pictogrammes
-- Refonte visuelle du formulaire Ajouter une recette
-- Barre de navigation inférieure affinée
-- Fiche recette : cœur en haut, bouton cuisine principal, actions Courses/Planning/Partager alignées
-- Liens de partage directs via ?recette=ID ; ouverture automatique après chargement du catalogue
-- Les actions de recettes personnelles sont regroupées dans Autres actions
-- Version et cache actualisés

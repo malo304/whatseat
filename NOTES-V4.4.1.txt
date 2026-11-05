@@ -1,8 +1,0 @@
-Whats’Eat? V4.4.1 — correctifs de la bêta V4.4
-
-1. Filtres avancés et Surprends-moi alignés à gauche sous les autres boutons, nouvelle icône de filtre.
-2. Importer une sauvegarde : apparence harmonisée avec Exporter.
-3. Numéro de version corrigé en V4.4.1.
-4. Dons ponctuels et abonnement mensuel séparés en sections explicites.
-
-Conserve le contenu du ZIP et teste avant publication. Les données locales restent liées au domaine du site.

@@ -1,1 +1,0 @@
-WhatsEat V3.3 — Mettre à jour uniquement index.html, app.js, sw.js et scripts/sync_hellofresh.py. Conserver recipes.json du dépôt GitHub. Les ustensiles sont suggérés à partir des étapes lorsqu’aucune liste explicite n’est disponible. La classification est heuristique. Conserver les données personnelles en évitant de supprimer l’application.
