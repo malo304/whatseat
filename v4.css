@@ -102,3 +102,7 @@ button.back:hover,.back:focus-visible{background:transparent!important}
 .v43-splash-center p{margin:0;color:#173B27;font-weight:600;font-size:clamp(13px,3.5vw,16px);text-align:center}
 @keyframes v43Rotate{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.v43-splash-spinner{animation-duration:2.5s!important}}
+
+/* V4.5.9: images des fiches sans bandes */
+#detailView img.hero{display:block!important;width:100%!important;max-width:100%!important;aspect-ratio:16 / 9!important;height:auto!important;object-fit:cover!important;object-position:center!important;background:transparent!important;border-radius:18px!important;}
+.recipegrid .recipe>img{display:block!important;width:100%!important;aspect-ratio:4 / 3!important;object-fit:cover!important;object-position:center!important;}
