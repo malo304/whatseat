@@ -106,3 +106,6 @@ button.back:hover,.back:focus-visible{background:transparent!important}
 /* V4.5.9: images des fiches sans bandes */
 #detailView img.hero{display:block!important;width:100%!important;max-width:100%!important;aspect-ratio:16 / 9!important;height:auto!important;object-fit:cover!important;object-position:center!important;background:transparent!important;border-radius:18px!important;}
 .recipegrid .recipe>img{display:block!important;width:100%!important;aspect-ratio:4 / 3!important;object-fit:cover!important;object-position:center!important;}
+
+/* V4.5.10 — dimension stable des images de fiches */
+#detailView img.hero{height:auto!important;min-height:0;aspect-ratio:16 / 9!important;object-fit:cover!important;}
