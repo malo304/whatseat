@@ -109,3 +109,7 @@ button.back:hover,.back:focus-visible{background:transparent!important}
 
 /* V4.5.10 — dimension stable des images de fiches */
 #detailView img.hero{height:auto!important;min-height:0;aspect-ratio:16 / 9!important;object-fit:cover!important;}
+
+/* V4.5.13: recadrage sans déformation */
+#detailView .we-hero-frame{display:block;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:18px;background:#f0f5df;}
+#detailView .we-hero-frame img.hero{display:block!important;width:100%!important;height:100%!important;min-height:0!important;max-width:none!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center!important;border-radius:0!important;}
