@@ -17,6 +17,7 @@
   };
   const notify=message=>{const status=get('syncStatus');if(status)status.textContent=message;else alert(message)};
   const exportButton=get('exportBtn'),importInput=get('importBackup'),resetButton=get('resetBtn');
+  const versionLabel=get('settingsView')?.querySelector('.aboutpanel p');if(versionLabel)versionLabel.textContent='Version V4.5.15';
   if(exportButton)exportButton.onclick=async()=>{
     try{
       const main=JSON.parse(JSON.stringify(state));
