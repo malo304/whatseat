@@ -70,8 +70,10 @@
       if(!response.ok)throw new Error('Service temporairement indisponible');
       const data=await response.json();
       const p=data.product||{};
-      const name=String(p.product_name_fr||p.product_name||'').trim();
-      if(Number(data.status)!==1||!name){
+      const name=String(p.product_name_fr||p.product_name||p.generic_name||'').trim();
+      // L'API v3 renvoie un statut textuel (et non le code numérique 1 de l'ancienne API v2).
+      // La présence d'un nom dans l'objet produit confirme ici que la fiche a été trouvée.
+      if(!name){
         showStatus('Produit introuvable. Tu peux saisir son nom manuellement dans le formulaire du frigo.');
         return;
       }
