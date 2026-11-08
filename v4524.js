@@ -12,7 +12,7 @@
   style.id = 'weAppearanceStyles';
   style.textContent = `
     #settingsView .we-appearance-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
-    #settingsView .we-appearance-option{min-width:0;padding:11px 5px;border:1px solid #9bb79c;border-radius:12px;background:#f5f8f4;color:#173b27;font-weight:700;font-size:13px}
+    #settingsView .we-appearance-option{min-width:0;padding:11px 5px;border:1px solid #9bb79c;border-radius:12px;background:#f5f8f4;color:#173b27;font-weight:700;font-size:clamp(10px,3vw,13px)}
     #settingsView .we-appearance-option[aria-pressed="true"]{background:#24583a;border-color:#24583a;color:#fff;box-shadow:0 0 0 2px #a9c5a6}
     #settingsView .we-appearance-option:focus-visible{outline:3px solid #6d9d72;outline-offset:2px}
     html[data-we-theme="dark"]{color-scheme:dark;--bg:#17251c;--card:#24372b;--card2:#2b4032;--line:#435d49;--text:#e8f0e8;--muted:#b2c2b5}
@@ -55,6 +55,7 @@
     html[data-we-theme="dark"] .plan-remove,html[data-we-theme="dark"] .v444-action,
     html[data-we-theme="dark"] #detailView .v444-favorite{background:#2b4032!important;color:#e0eddf!important;border-color:#506b55!important}
     html[data-we-theme="dark"] .quick-times button.active,html[data-we-theme="dark"] .quick-times button:active{background:#315f40!important;color:#fff!important}
+    html[data-we-theme="dark"] #settingsView .we-appearance-option:not([aria-pressed="true"]){background:#2b4032!important;color:#e0eddf!important;border-color:#506b55!important}
     html[data-we-theme="dark"] .favorites-pill{background:#553744!important;color:#ffd8e3!important;border-color:#815365!important}
     html[data-we-theme="dark"] .made-pill{background:#2c4936!important;color:#d8efda!important;border-color:#54775a!important}
     html[data-we-theme="dark"] .recommend-pill{background:#353c5b!important;color:#e1e4ff!important;border-color:#555d83!important}
@@ -112,7 +113,7 @@
     const panel = document.createElement('section');
     panel.id = 'weAppearancePanel';
     panel.className = 'panel';
-    panel.innerHTML = '<h3>Apparence</h3><p class="muted">Choisis le thème de Whats’Eat. Le mode automatique suit les réglages d’apparence de ton appareil.</p><div class="we-appearance-options" id="weAppearanceOptions" role="group" aria-label="Thème de l’application"><button type="button" class="we-appearance-option" data-appearance="light" aria-pressed="false">☀️ Clair</button><button type="button" class="we-appearance-option" data-appearance="dark" aria-pressed="false">🌙 Sombre</button><button type="button" class="we-appearance-option" data-appearance="system" aria-pressed="false">📱 Auto</button></div>';
+    panel.innerHTML = '<h3>Apparence</h3><p class="muted">Choisis le thème de Whats’Eat. Le mode automatique suit les réglages d’apparence de ton appareil.</p><div class="we-appearance-options" id="weAppearanceOptions" role="group" aria-label="Thème de l’application"><button type="button" class="we-appearance-option" data-appearance="light" aria-pressed="false">☀️ Clair</button><button type="button" class="we-appearance-option" data-appearance="dark" aria-pressed="false">🌙 Sombre</button><button type="button" class="we-appearance-option" data-appearance="system" aria-pressed="false">📱 Automatique</button></div>';
     heading.insertAdjacentElement('afterend', panel);
     panel.addEventListener('click', event => {
       const button = event.target.closest('[data-appearance]');
