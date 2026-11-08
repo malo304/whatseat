@@ -16,7 +16,8 @@
   el('v45StockForm').onsubmit=e=>{e.preventDefault();const f=new FormData(e.currentTarget);const name=String(f.get('name')||'').trim(),unit=String(f.get('unit')||'').trim(),qty=Number(f.get('quantity'));if(!name||!Number.isFinite(qty)||qty<0)return;stock.push({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),name,unit,quantity:qty,expiry:String(f.get('expiry')||'')});storeStock();e.currentTarget.reset();drawStock();};
   panel.addEventListener('click',e=>{const btn=e.target.closest('[data-stock-delete]');if(!btn)return;stock=stock.filter(x=>x.id!==btn.dataset.stockDelete);storeStock();drawStock();});drawStock();
  };
- function drawStock(){const target=el('v45StockItems');if(!target)return;target.innerHTML=stock.length?stock.map(x=>`<div class="v45-stock-item"><span><b>${esc(x.name)}</b> · ${format(x.quantity)} ${esc(x.unit)}${x.expiry?' · jusqu’au '+esc(x.expiry):''}</span><button type="button" data-stock-delete="${esc(x.id)}" aria-label="Supprimer">×</button></div>`).join(''):'<p class="muted">Aucun produit enregistré.</p>';}
+ const displayDate = value => { const m=String(value||'').match(/^(\\d{4})-(\\d{2})-(\\d{2})$/); return m ? `${m[3]}-${m[2]}-${m[1]}` : String(value||''); };
+ function drawStock(){const target=el('v45StockItems');if(!target)return;target.innerHTML=stock.length?stock.map(x=>`<div class="v45-stock-item"><span><b>${esc(x.name)}</b> · ${format(x.quantity)} ${esc(x.unit)}${x.expiry?' · jusqu’au '+esc(displayDate(x.expiry)):''}</span><button type="button" data-stock-delete="${esc(x.id)}" aria-label="Supprimer">×</button></div>`).join(''):'<p class="muted">Aucun produit enregistré.</p>';}
  ensurePanel();
  // Full-width inline planning form; do not change the established recipe action buttons.
  const priorDetail=renderDetail;
