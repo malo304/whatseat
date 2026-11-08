@@ -41,9 +41,8 @@
 
   let overlay=null,reader=null,scannerLoading=null;
   function stopCamera(){
-    try{reader?.reset?.();}catch{}
-    reader=null;
-    if(overlay){const video=overlay.querySelector('video');if(video?.srcObject)video.srcObject.getTracks().forEach(t=>t.stop());}
+    const active=reader;reader=null;
+    if(active){try{const stopped=active.stop();if(stopped&&typeof stopped.then==='function')stopped.then(()=>{try{active.clear()}catch{}}).catch(()=>{});else{try{active.clear()}catch{}}}catch{}}
   }
   function close(){
     stopCamera();
@@ -55,8 +54,8 @@
     if(scannerLoading)return scannerLoading;
     scannerLoading=new Promise((resolve,reject)=>{
       const s=document.createElement('script');
-      s.src='https://cdn.jsdelivr.net/npm/@zxing/browser@0.1.5/umd/index.min.js';
-      s.onload=()=>window.ZXingBrowser?resolve(window.ZXingBrowser):reject(new Error('Bibliothèque de scan indisponible'));
+      s.src='https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js';
+      s.onload=()=>window.Html5Qrcode?resolve(window):reject(new Error('Bibliothèque de scan indisponible'));
       s.onerror=()=>reject(new Error('Impossible de charger le lecteur de codes-barres'));
       document.head.append(s);
     });
@@ -93,7 +92,7 @@
   function open(){
     if(overlay)return;
     overlay=document.createElement('div');overlay.className='we-barcode-overlay';overlay.id='weBarcodeOverlay';
-    overlay.innerHTML='<section class="we-barcode-dialog" role="dialog" aria-modal="true" aria-labelledby="weBarcodeTitle"><h3 id="weBarcodeTitle">Scanner un produit</h3><p>Place le code-barres devant la caméra. Le nom sera recherché dans Open Food Facts.</p><div class="we-barcode-video-wrap"><video class="we-barcode-video" id="weBarcodeVideo" muted playsinline></video></div><p class="we-barcode-status" id="weBarcodeStatus" role="status">Préparation de la caméra…</p><div class="we-barcode-manual"><input id="weBarcodeManual" inputmode="numeric" autocomplete="off" placeholder="Ou saisir le code-barres" aria-label="Code-barres manuel"><button type="button" id="weBarcodeSearch">Rechercher</button></div><div class="we-barcode-actions"><button type="button" class="we-barcode-close" id="weBarcodeClose">Fermer</button></div></section>';
+    overlay.innerHTML='<section class="we-barcode-dialog" role="dialog" aria-modal="true" aria-labelledby="weBarcodeTitle"><h3 id="weBarcodeTitle">Scanner un produit</h3><p>Place le code-barres devant la caméra. Le nom sera recherché dans Open Food Facts.</p><div class="we-barcode-video-wrap"><div class="we-barcode-video" id="weBarcodeScanner"></div></div><p class="we-barcode-status" id="weBarcodeStatus" role="status">Préparation de la caméra…</p><div class="we-barcode-manual"><input id="weBarcodeManual" inputmode="numeric" autocomplete="off" placeholder="Ou saisir le code-barres" aria-label="Code-barres manuel"><button type="button" id="weBarcodeSearch">Rechercher</button></div><div class="we-barcode-actions"><button type="button" class="we-barcode-close" id="weBarcodeClose">Fermer</button></div></section>';
     document.body.append(overlay);
     $('weBarcodeClose').addEventListener('click',close);
     $('weBarcodeSearch').addEventListener('click',()=>lookup($('weBarcodeManual').value));
@@ -107,10 +106,12 @@
       showStatus('Activation de la caméra…');
       const ZX=await loadScanner();
       if(!overlay)return;
-      reader=new ZX.BrowserMultiFormatReader();
-      await reader.decodeFromVideoDevice(undefined,$('weBarcodeVideo'),(result,error)=>{
-        if(result){const code=result.getText();showStatus('Code détecté : '+code);stopCamera();lookup(code);}
-      });
+      const formats=[ZX.Html5QrcodeSupportedFormats.EAN_13,ZX.Html5QrcodeSupportedFormats.EAN_8,ZX.Html5QrcodeSupportedFormats.UPC_A,ZX.Html5QrcodeSupportedFormats.UPC_E,ZX.Html5QrcodeSupportedFormats.CODE_128];
+      reader=new ZX.Html5Qrcode('weBarcodeScanner',{verbose:false,formatsToSupport:formats});
+      await reader.start({facingMode:'environment'},{fps:10,qrbox:{width:280,height:130},aspectRatio:1.777},decodedText=>{
+        if(!overlay)return;
+        showStatus('Code détecté : '+decodedText);stopCamera();lookup(decodedText);
+      },()=>{});
       if(overlay)showStatus('Vise le code-barres au centre de l’image.');
     }catch(error){showStatus((error.message||'Caméra indisponible')+' Saisis le code-barres ci-dessous pour continuer.');}
   }
