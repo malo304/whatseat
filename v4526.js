@@ -33,7 +33,7 @@
         banner.id='weExpiryBanner';banner.className='we-expiry-banner hidden';banner.setAttribute('role','status');banner.setAttribute('aria-live','polite');
         banner.innerHTML='<div class="we-expiry-copy"><strong id="weExpiryTitle">À surveiller</strong><span id="weExpirySummary"></span></div><button type="button" id="weExpiryOpen">Voir mon frigo</button>';
         header.insertAdjacentElement('afterend',banner);
-        $('weExpiryOpen').addEventListener('click',()=>document.querySelector('[data-nav="kitchen"]')?.click() || document.getElementById('fridgeBtn')?.click());
+        $('weExpiryOpen').addEventListener('click',()=>{const nav=document.querySelector('[data-nav="kitchen"]');if(nav)nav.click();else document.getElementById('fridgeBtn')?.click();});
       }
     }
     const kitchen=$('kitchenView');
