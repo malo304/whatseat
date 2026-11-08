@@ -1,4 +1,4 @@
-/* Whats'Eat V4.5.22 — notes personnelles sur chaque recette. */
+/* Whats'Eat V4.5.23 — notes personnelles sur chaque recette. */
 'use strict';
 (() => {
   if (typeof renderDetail !== 'function' || typeof state !== 'object') return;
@@ -58,6 +58,9 @@
 
   const style = document.createElement('style');
   style.textContent = `
+    #detailView .we-recipe-notes label.field {
+      color:#173B27!important;
+    }
     #detailView .we-recipe-notes textarea {
       display:block;width:100%;min-height:112px;box-sizing:border-box;
       padding:12px;border:1px solid #9fb7a0;border-radius:12px;
@@ -70,5 +73,5 @@
   document.head.append(style);
 
   const version = document.querySelector('#settingsView .aboutpanel p');
-  if (version) version.textContent = 'Version V4.5.22';
+  if (version) version.textContent = 'Version V4.5.23';
 })();
