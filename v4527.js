@@ -1,6 +1,7 @@
 /* Whats'Eat? V4.5.27 — scanner de codes-barres et recherche Open Food Facts. */
 'use strict';
 (() => {
+  function init(){
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const stockForm = $('v45StockForm');
@@ -114,4 +115,6 @@
     }catch(error){showStatus((error.message||'Caméra indisponible')+' Saisis le code-barres ci-dessous pour continuer.');}
   }
   launch.addEventListener('click',open);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
