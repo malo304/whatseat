@@ -116,6 +116,42 @@
   const settingsObserver=new MutationObserver(()=>{if(!$('weFoodSafetyPanel')&&$('settingsView')&&!$('settingsView').classList.contains('hidden'))renderSafetySettings()});
   const view=$('settingsView');if(view)settingsObserver.observe(view,{attributes:true,attributeFilter:['class']});
   if(!$('weFoodSafetyPanel') && $('settingsView') && !$('settingsView').classList.contains('hidden'))renderSafetySettings();
+
+  // In mask mode, keep incompatible recipes out of the visible plan and shopping list.
+  const previousPlanRender = window.v44RenderPlanning;
+  if (typeof previousPlanRender === 'function') {
+    window.v44RenderPlanning = function(){
+      previousPlanRender();
+      if(settingsData().mode!=='mask')return;
+      const hidden=[];
+      $('planner')?.querySelectorAll('[data-plan-open]').forEach(button=>{
+        const recipe=allRecipes().find(item=>String(item.id)===String(button.dataset.planOpen));
+        if(recipe&&conflicts(recipe).length){
+          const card=button.closest('article')||button.parentElement;
+          if(card){card.hidden=true;hidden.push(recipe.title);}
+        }
+      });
+      if(hidden.length){
+        const note=document.createElement('p');
+        note.className='muted we-plan-hidden-note';
+        note.setAttribute('role','status');
+        note.textContent=hidden.length+' recette(s) masquée(s) car elles contiennent un ingrédient à éviter. Modifie les exclusions pour les réafficher.';
+        $('planner')?.prepend(note);
+      }
+    };
+  }
+  const planShoppingButton=$('planShopping');
+  if(planShoppingButton){
+    planShoppingButton.onclick=()=>{
+      const ids=Object.values(state.planner||{}).filter(Boolean);
+      const safe=ids.map(id=>allRecipes().find(recipe=>String(recipe.id)===String(id))).filter(recipe=>recipe&&v4Compatible(recipe));
+      const blocked=ids.length-safe.length;
+      if(!safe.length){alert(blocked?'Aucune recette du planning ne peut être ajoutée : vérifie tes exclusions alimentaires.':'Aucun repas programmé.');return;}
+      safe.forEach(recipe=>addShopping(recipe,v4.weeklyPeople));
+      alert('Ingrédients des recettes compatibles ajoutés à la liste de courses.'+(blocked?' '+blocked+' recette(s) exclue(s) selon tes réglages alimentaires.':''));
+    };
+  }
+
   const aboutVersion=$('settingsView')?.querySelector('.aboutpanel p');
-  if(aboutVersion)aboutVersion.textContent='Version V4.5.37';
+  if(aboutVersion)aboutVersion.textContent='Version V4.5.46';
 })();
