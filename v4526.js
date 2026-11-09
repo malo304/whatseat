@@ -24,7 +24,7 @@
       return {...x,days};
     }).filter(x=>x.days<=HORIZON_DAYS).sort((a,b)=>a.days-b.days || String(a.name).localeCompare(String(b.name),'fr'));
   }
-  const displayDate = value => { const m=String(value||'').match(/^(\\d{4})-(\\d{2})-(\\d{2})$/); return m ? `${m[3]}-${m[2]}-${m[1]}` : String(value||''); };
+  const displayDate = value => { const m=String(value||'').match(/^(\d{4})-(\d{2})-(\d{2})$/); return m ? `${m[3]}-${m[2]}-${m[1]}` : String(value||''); };
   const dateLabel = days => days<0 ? 'Périmé depuis '+Math.abs(days)+' jour(s)' : days===0 ? 'À consommer aujourd’hui' : days===1 ? 'Expire demain' : 'Expire dans 2 jours';
   function ensureUI() {
     if (!$('weExpiryBanner')) {
