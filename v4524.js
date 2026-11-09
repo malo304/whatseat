@@ -165,6 +165,6 @@
     else if (media.addListener) media.addListener(onChange);
   }
   const version = document.querySelector('#settingsView .aboutpanel p');
-  if (version) version.textContent = 'Version V4.5.43';
+  if (version) version.textContent = 'Version V4.5.44';
   applyTheme();
 })();
