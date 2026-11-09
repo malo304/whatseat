@@ -69,7 +69,8 @@
     html[data-we-theme="dark"] .secondary,html[data-we-theme="dark"] .filebutton,
     html[data-we-theme="dark"] #settingsView .rowbuttons .filebutton{background:#304b38!important;color:#e0eddf!important;border-color:#58765e!important}
     html[data-we-theme="dark"] .subtle{background:#304b38!important;color:#d7e8d9!important}
-    html[data-we-theme="dark"] .back,html[data-we-theme="dark"] .iconbtn{color:#dcebdc!important;background:#293e30!important;border-color:#506b55!important}
+    html[data-we-theme="dark"] .back{color:#dcebdc!important;background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+    html[data-we-theme="dark"] .iconbtn{color:#dcebdc!important;background:#293e30!important;border-color:#506b55!important}
     html[data-we-theme="dark"] .plan-line select,html[data-we-theme="dark"] .shoppingrow,
     html[data-we-theme="dark"] .plan-day,html[data-we-theme="dark"] .checklist li,
     html[data-we-theme="dark"] .v44-shopping-row{border-color:#435d49!important}
@@ -164,6 +165,6 @@
     else if (media.addListener) media.addListener(onChange);
   }
   const version = document.querySelector('#settingsView .aboutpanel p');
-  if (version) version.textContent = 'Version V4.5.24';
+  if (version) version.textContent = 'Version V4.5.43';
   applyTheme();
 })();
