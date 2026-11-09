@@ -15,6 +15,7 @@
     #settingsView .we-appearance-option{min-width:0;min-height:104px;padding:12px 5px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;border:1px solid #9bb79c;border-radius:12px;background:#f5f8f4;color:#173b27;font-weight:700;font-size:clamp(10px,3vw,13px)}
     #settingsView .we-appearance-icon{width:38px;height:38px;display:block;flex:none}\n    #settingsView .we-appearance-option span{display:block;line-height:1.2}\n    #settingsView .we-appearance-option[aria-pressed="true"]{background:#24583a;border-color:#24583a;color:#fff;box-shadow:0 0 0 2px #a9c5a6}
     #settingsView .we-appearance-option:focus-visible{outline:3px solid #6d9d72;outline-offset:2px}
+    html[data-we-theme="dark"] .top .brand .wordmark-img{filter:brightness(1.45) saturate(.92)}
     html[data-we-theme="dark"]{color-scheme:dark;--bg:#17251c;--card:#24372b;--card2:#2b4032;--line:#435d49;--text:#e8f0e8;--muted:#b2c2b5}
     html[data-we-theme="dark"],html[data-we-theme="dark"] body{background:#17251c!important;color:#e8f0e8!important}
     html[data-we-theme="dark"] body{background:linear-gradient(135deg,#1b2d21 0%,#142219 100%) fixed!important}
@@ -163,5 +164,3 @@
   if (version) version.textContent = 'Version V4.5.24';
   applyTheme();
 })();
-/* Logo d’en-tête éclairci uniquement en mode sombre. */
-html[data-we-theme="dark"] .top .brand .wordmark-img{filter:brightness(1.45) saturate(.92)}
