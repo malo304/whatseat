@@ -163,3 +163,5 @@
   if (version) version.textContent = 'Version V4.5.24';
   applyTheme();
 })();
+/* Logo d’en-tête éclairci uniquement en mode sombre. */
+html[data-we-theme="dark"] .top .brand .wordmark-img{filter:brightness(1.45) saturate(.92)}
