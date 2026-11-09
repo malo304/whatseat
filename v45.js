@@ -68,5 +68,5 @@
   };
  }
  // Keep the approved splash art untouched.
- const version=el('settingsView')?.querySelector('.aboutpanel p');if(version)version.textContent='Version V4.5.0';
+ const version=el('settingsView')?.querySelector('.aboutpanel p');if(version)version.textContent='Version V4.5.41';
 })();
