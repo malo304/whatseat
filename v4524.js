@@ -28,6 +28,7 @@
     html[data-we-theme="dark"] p,html[data-we-theme="dark"] li,html[data-we-theme="dark"] .meta,
     html[data-we-theme="dark"] .muted,html[data-we-theme="dark"] .status,html[data-we-theme="dark"] .recipefoot,
     html[data-we-theme="dark"] .recipe-source,html[data-we-theme="dark"] .plan-day em{color:#b6c7b9}
+     html[data-we-theme="dark"] .donation-group p{color:#c6d7c9!important}
     html[data-we-theme="dark"] .panel,html[data-we-theme="dark"] .recipe,html[data-we-theme="dark"] .filters,
     html[data-we-theme="dark"] .searchbox,html[data-we-theme="dark"] .v44-plan-card,html[data-we-theme="dark"] .donation-group,
     html[data-we-theme="dark"] .donation-panel,html[data-we-theme="dark"] .v442-donation-card,

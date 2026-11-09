@@ -117,5 +117,5 @@
   const view=$('settingsView');if(view)settingsObserver.observe(view,{attributes:true,attributeFilter:['class']});
   if(!$('weFoodSafetyPanel') && $('settingsView') && !$('settingsView').classList.contains('hidden'))renderSafetySettings();
   const aboutVersion=$('settingsView')?.querySelector('.aboutpanel p');
-  if(aboutVersion)aboutVersion.textContent='Version V4.5.35';
+  if(aboutVersion)aboutVersion.textContent='Version V4.5.36';
 })();
