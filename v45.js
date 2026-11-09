@@ -55,7 +55,7 @@
   old.onclick=async()=>{
    const count=Math.max(1,Math.min(14,Number(el('weeklyCount').value)||5));v4.weeklyCount=count;
    if(v44Entries().length){const ok=window.whatseatDialog?await window.whatseatDialog.confirm('Remplacer les repas actuellement prévus ?', {title:'Générer mon planning ?'}):confirm('Remplacer les repas prévus ?');if(!ok)return;}
-   const pool=allRecipes().filter(r=>!v4.equipment?.length||v4Compatible(r));if(!pool.length){toast('Aucune recette disponible.');return;}
+   const pool=allRecipes().filter(r=>v4Compatible(r));if(!pool.length){toast('Aucune recette disponible.');return;}
    const avoid=el('v45Avoid').checked,fav=el('v45Fav').checked,variety=el('v45Variety').checked,useStock=el('v45Stock').checked;
    const candidates=pool.map(r=>{let score=Math.random()*4;
     if(avoid&&(state.made||{})[r.id])score-=5;
@@ -68,5 +68,5 @@
   };
  }
  // Keep the approved splash art untouched.
- const version=el('settingsView')?.querySelector('.aboutpanel p');if(version)version.textContent='Version V4.5.41';
+ const version=el('settingsView')?.querySelector('.aboutpanel p');if(version)version.textContent='Version V4.5.46';
 })();
