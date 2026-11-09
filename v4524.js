@@ -86,7 +86,39 @@
     html[data-we-theme="dark"] #supportOverlay textarea{background:#17271d!important;color:#e8f0e8!important;border-color:#506b55!important}
     html[data-we-theme="dark"] #supportOverlay .support-back{color:#e0eddf!important}
     html[data-we-theme="dark"] .v442-clock,html[data-we-theme="dark"] .v442-timer small{color:#c5d6c8!important}
-    @media(prefers-reduced-motion:reduce){html[data-we-theme="dark"] *{transition:none!important}}
+    
+     /* Audit global de contraste — textes et composants hérités du thème clair. */
+     html[data-we-theme="dark"] #detailView .step{background:#24372b!important;border-color:#435d49!important;color:#e8f0e8!important}
+     html[data-we-theme="dark"] #detailView .step h4,html[data-we-theme="dark"] #detailView .step p{color:#dce9dd!important}
+     html[data-we-theme="dark"] #detailView .we-recipe-notes label.field{color:#e0eddf!important}
+     html[data-we-theme="dark"] .v43-more p{color:#c6d7c9!important}
+     html[data-we-theme="dark"] .v44-plan-body strong{color:#e0eddf!important}
+     html[data-we-theme="dark"] .v44-plan-body small,html[data-we-theme="dark"] .v44-shop-text small,html[data-we-theme="dark"] .v443-unit{color:#b6c7b9!important}
+     html[data-we-theme="dark"] .v44-plan-actions button,html[data-we-theme="dark"] .v44-pick-hint button{background:#304b38!important;color:#e0eddf!important;border-color:#58765e!important}
+     html[data-we-theme="dark"] .v44-pick-hint{background:#293e30!important;color:#e0eddf!important;border-color:#58765e!important}
+     html[data-we-theme="dark"] .v44-added{background:#315b3b!important;color:#e3f1df!important;border-color:#638b68!important}
+     html[data-we-theme="dark"] #startTimer{background:#304b38!important;color:#e0eddf!important;border-color:#58765e!important}
+     html[data-we-theme="dark"] .v442-plan-day{color:#c6d7c9!important}
+     html[data-we-theme="dark"] .v442-done{color:#ffaaa0!important}
+     html[data-we-theme="dark"] .v442-donation-card{background:#24372b!important;color:#e8f0e8!important;border-color:#506b55!important}
+     html[data-we-theme="dark"] .v442-donation-card p,html[data-we-theme="dark"] .v442-donation-card small{color:#c6d7c9!important}
+     html[data-we-theme="dark"] #v442TimerDock .v442-timer button[data-timer-toggle]{background:#304b38!important;color:#e0eddf!important;border-color:#58765e!important}
+     html[data-we-theme="dark"] #v442TimerDock .v442-timer button[data-timer-delete]{background:#493238!important;color:#ffc4c4!important;border-color:#80535a!important}
+     html[data-we-theme="dark"] #detailView .v444-action{background:#2b4032!important;color:#e0eddf!important;border-color:#506b55!important}
+     html[data-we-theme="dark"] #detailView .v444-more{color:#c6d7c9!important}
+     html[data-we-theme="dark"] #editorView #recipeForm .field{color:#e0eddf!important}
+     html[data-we-theme="dark"] #editorView #recipeForm{background:#24372b!important;border-color:#435d49!important}
+     html[data-we-theme="dark"] #editorView #recipeForm input,html[data-we-theme="dark"] #editorView #recipeForm textarea,html[data-we-theme="dark"] #editorView #recipeForm select{background:#17271d!important;color:#e8f0e8!important;border-color:#506b55!important}
+     html[data-we-theme="dark"] .planning-controls label,html[data-we-theme="dark"] .checkline,html[data-we-theme="dark"] .equipment-choices label{color:#e0eddf!important}
+     html[data-we-theme="dark"] .v45-plan-preferences{background:#293e30!important;color:#e0eddf!important;border:1px solid #435d49}
+     html[data-we-theme="dark"] .v45-plan-form label,html[data-we-theme="dark"] .v45-stock-form .v451-expiry-field{color:#e0eddf!important}
+     html[data-we-theme="dark"] .v45-stock-item{border-color:#435d49!important;color:#e0eddf!important}
+     html[data-we-theme="dark"] .v45-available{color:#b9d9bd!important}
+     html[data-we-theme="dark"] .v45-stock-form .v451-expiry-field input[type="date"]{background:#17271d!important;color:#e8f0e8!important;border-color:#506b55!important;color-scheme:dark}
+     html[data-we-theme="dark"] .we-food-card-warning{color:#f1c77d!important}
+     html[data-we-theme="dark"] .we-season-note{color:#b6c7b9!important}
+     html[data-we-theme="dark"] #kitchenView .pantryresult button,html[data-we-theme="dark"] #kitchenView .pantryresult span{color:#e0eddf!important}
+@media(prefers-reduced-motion:reduce){html[data-we-theme="dark"] *{transition:none!important}}
   `;
   document.head.append(style);
 
