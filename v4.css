@@ -117,3 +117,8 @@ button.back:hover,.back:focus-visible{background:transparent!important}
 /* V4.5.14 — cadre fixe et photo recadrée proportionnellement, sans étirement. */
 #detailView .we-hero-frame{position:relative!important;width:100%!important;height:auto!important;aspect-ratio:16 / 9!important;overflow:hidden!important;}
 #detailView .we-hero-frame > img.hero{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;max-width:none!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:50% 50%!important;transform:none!important;}
+
+/* V4.5.44 — métriques compactes sur les tuiles de recettes. */
+.v4-metrics{display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:clamp(5px,1.8vw,9px);font-size:clamp(10px,2.7vw,11.5px);line-height:1.2;margin:5px 0 3px;white-space:nowrap;overflow:hidden}
+.v4-metrics span{display:inline-flex;align-items:center;white-space:nowrap;min-width:0}
+html[data-we-theme="dark"] .v4-metrics{color:#d5e5d7!important}
