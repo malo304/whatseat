@@ -1,4 +1,4 @@
-/* Whats'Eat? V4.5.34 — allergies and ingredient exclusions. */
+/* Whats'Eat? V4.5.35 — allergies and ingredient exclusions. */
 'use strict';
 (() => {
   const $ = id => document.getElementById(id);
@@ -17,7 +17,8 @@
     {id:'sesame',label:'Sésame',terms:['sesame','graines de sesame','huile de sesame','tahini','tahin']},
     {id:'sulfites',label:'Sulfites',terms:['sulfite','sulfites','dioxyde de soufre','e220','e221','e222','e223','e224','e225','e226','e227','e228']},
     {id:'lupin',label:'Lupin',terms:['lupin','farine de lupin']},
-    {id:'mollusques',label:'Mollusques',terms:['mollusque','mollusques','moule','moules','huitre','huitres','calamar','calamars','seiche','seiches','poulpe','escargot','coquille saint jacques','palourde','palourdes','bigorneau']}
+    {id:'mollusques',label:'Mollusques',terms:['mollusque','mollusques','moule','moules','huitre','huitres','calamar','calamars','seiche','seiches','poulpe','escargot','coquille saint jacques','palourde','palourdes','bigorneau']},
+    {id:'champignons',label:'Champignons',terms:['champignon','champignons','champignon de paris','pleurote','pleurotes','shiitake','shitake','cepe','cepes','girolle','girolles','morille','morilles','chanterelle','chanterelles','portobello','enoki','bolet','bolets','truffe','truffes']}
   ];
   const DEFAULTS = {selected:[],custom:[],mode:'signal'};
   state.foodSafety = Object.assign({},DEFAULTS,state.foodSafety||{});
@@ -116,5 +117,5 @@
   const view=$('settingsView');if(view)settingsObserver.observe(view,{attributes:true,attributeFilter:['class']});
   if(!$('weFoodSafetyPanel') && $('settingsView') && !$('settingsView').classList.contains('hidden'))renderSafetySettings();
   const aboutVersion=$('settingsView')?.querySelector('.aboutpanel p');
-  if(aboutVersion)aboutVersion.textContent='Version V4.5.34';
+  if(aboutVersion)aboutVersion.textContent='Version V4.5.35';
 })();
