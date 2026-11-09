@@ -118,7 +118,8 @@ button.back:hover,.back:focus-visible{background:transparent!important}
 #detailView .we-hero-frame{position:relative!important;width:100%!important;height:auto!important;aspect-ratio:16 / 9!important;overflow:hidden!important;}
 #detailView .we-hero-frame > img.hero{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;max-width:none!important;max-height:none!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:50% 50%!important;transform:none!important;}
 
-/* V4.5.44 — métriques compactes sur les tuiles de recettes. */
-.v4-metrics{display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:clamp(5px,1.8vw,9px);font-size:clamp(10px,2.7vw,11.5px);line-height:1.2;margin:5px 0 3px;white-space:nowrap;overflow:hidden}
-.v4-metrics span{display:inline-flex;align-items:center;white-space:nowrap;min-width:0}
-html[data-we-theme="dark"] .v4-metrics{color:#d5e5d7!important}
+
+/* V4.5.45 — retour aux métriques simples, sans pastilles. */
+.v4-metrics{display:flex;flex-wrap:wrap;align-items:center;gap:5px 12px;font-size:12px;line-height:1.3;margin:9px 0;color:#315D3E;white-space:normal;overflow:visible}
+.v4-metrics span{display:inline;min-width:0;background:transparent;border:0;border-radius:0;padding:0;white-space:normal}
+html[data-we-theme="dark"] .v4-metrics,html[data-we-theme="dark"] .v4-metrics span{color:#eff8ec!important;font-weight:600!important}
