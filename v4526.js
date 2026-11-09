@@ -52,6 +52,9 @@
     const expired=alerts.filter(x=>x.days<0), upcoming=alerts.filter(x=>x.days>=0);
     const banner=$('weExpiryBanner');
     if(banner){
+      const allowedViews=['homeView','planningView','kitchenView'];
+      const allowedScreen=allowedViews.some(id=>{const view=$(id);return view&&!view.classList.contains('hidden');});
+      banner.classList.toggle('we-expiry-screen-hidden',!allowedScreen);
       banner.classList.toggle('hidden',alerts.length===0);
       if(alerts.length){
         $('weExpiryTitle').textContent=expired.length ? expired.length+' aliment(s) périmé(s)' : 'Péremption à surveiller';
@@ -66,7 +69,7 @@
   const style=document.createElement('style');
   style.textContent=`
     .we-expiry-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 16px;padding:12px 14px;border:1px solid #d4a65b;border-radius:14px;background:#fff6e6;color:#583b14}
-    .we-expiry-banner.hidden{display:none!important}
+    .we-expiry-banner.hidden,.we-expiry-banner.we-expiry-screen-hidden{display:none!important}
     .we-expiry-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
     .we-expiry-copy strong{font-size:14px}
     .we-expiry-copy span{font-size:12px}
@@ -90,6 +93,8 @@
   `;
   document.head.append(style);
   refresh();
+  const screenObserver=new MutationObserver(()=>refresh());
+  ['homeView','planningView','kitchenView','detailView','settingsView','shoppingView','cookView','editorView'].forEach(id=>{const view=$(id);if(view)screenObserver.observe(view,{attributes:true,attributeFilter:['class']});});
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
   window.addEventListener('pageshow',refresh);
   window.addEventListener('focus',refresh);
