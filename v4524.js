@@ -115,6 +115,9 @@
      html[data-we-theme="dark"] .v45-plan-form label,html[data-we-theme="dark"] .v45-stock-form .v451-expiry-field{color:#e0eddf!important}
      html[data-we-theme="dark"] .v45-stock-item{border-color:#435d49!important;color:#e0eddf!important}
      html[data-we-theme="dark"] .v45-available{color:#b9d9bd!important}
+      /* Valeurs de temps et nutrition nettement lisibles en thème sombre. */
+      html[data-we-theme="dark"] .v4-metrics,html[data-we-theme="dark"] .v4-metrics span,html[data-we-theme="dark"] .v4-detail-nutrition{color:#eff8ec!important;font-weight:700!important}
+      html[data-we-theme="dark"] .v4-metrics span{background:#314b38!important;border:1px solid #58765e!important;border-radius:7px;padding:4px 7px}
      html[data-we-theme="dark"] .v45-stock-form .v451-expiry-field input[type="date"]{background:#17271d!important;color:#e8f0e8!important;border-color:#506b55!important;color-scheme:dark}
      html[data-we-theme="dark"] .we-food-card-warning{color:#f1c77d!important}
      html[data-we-theme="dark"] .we-season-note{color:#b6c7b9!important}
