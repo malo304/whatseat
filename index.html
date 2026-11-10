@@ -16,7 +16,9 @@ Faire chauffer la poêle." rows="8"></textarea></label><button class="primary" t
 #supportOverlay{position:fixed;inset:0;z-index:10000;background:#f5f8f4;color:#24352b;overflow-y:auto;overscroll-behavior:contain;padding-top:0;padding-bottom:env(safe-area-inset-bottom, 0px);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 #supportOverlay.hidden{display:none!important}
 #supportOverlay *{box-sizing:border-box}
-#supportOverlay .support-top{position:sticky;top:0;background:#a9c5a6;padding:calc(max(env(safe-area-inset-top, 0px), 66px) + 16px) 20px 16px;z-index:2}
+#supportOverlay .support-top{position:sticky;top:0;background:#a9c5a6;padding:calc(env(safe-area-inset-top, 0px) + 10px) 20px 10px;z-index:2}
+/* V4.5.52 : la marge de 66 px qui dégage la Dynamic Island ne concerne que les iPhone (WebKit iOS) ; sur Android le bandeau reste compact. */
+@supports (-webkit-touch-callout:none){#supportOverlay .support-top{padding:calc(max(env(safe-area-inset-top, 0px), 66px) + 16px) 20px 16px}}
 #supportOverlay .support-back{border:0;background:transparent;color:#163b24;font:inherit;font-weight:700;padding:4px 0;cursor:pointer}
 #supportOverlay .support-main{max-width:640px;margin:auto;padding:22px 18px 60px}
 #supportOverlay .card{background:white;border-radius:18px;padding:22px;box-shadow:0 2px 12px #163b2410}
