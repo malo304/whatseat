@@ -31,3 +31,11 @@
 #editorView #recipeForm .twocol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
 #editorView #recipeForm button[type=submit]{width:100%;min-height:49px;border-radius:13px;background:#24835D;color:white;font-weight:750;margin-top:6px}
 @media(max-width:360px){#editorView #recipeForm .twocol{grid-template-columns:1fr}}
+
+/* V4.5.51 — cœur des favoris : même couleur que l'accueil, même taille plein/vide, sans effet de clic propre au téléphone. */
+.we-heart{display:block;flex:none;overflow:visible;color:#E98890;fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;transition:none}
+.we-heart.is-on{fill:currentColor}
+button.heart{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin:-5px -5px -5px 0;padding:0;font-size:0;line-height:0;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+#detailView .v444-favorite{display:flex;align-items:center;justify-content:center;font-size:0;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.favorites-pill .we-heart{display:inline-block;vertical-align:-3px;margin-right:2px}
+.favorites-pill .we-heart,#detailView .v444-favorite .we-heart{color:#E98890}

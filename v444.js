@@ -10,7 +10,7 @@
    if(title&&!root.querySelector('.v444-heading')){
      const wrap=document.createElement('div');wrap.className='v444-heading';title.parentNode.insertBefore(wrap,title);wrap.appendChild(title);
      const fav=document.getElementById('detailFav');
-     if(fav){fav.classList.add('v444-favorite');fav.innerHTML=state.favorites.includes(id)?'♥':'♡';fav.setAttribute('aria-label',state.favorites.includes(id)?'Retirer des favoris':'Ajouter aux favoris');fav.setAttribute('title','Favoris');wrap.appendChild(fav);}
+     if(fav){fav.classList.add('v444-favorite');fav.innerHTML=weHeart(state.favorites.includes(id),26);fav.setAttribute('aria-label',state.favorites.includes(id)?'Retirer des favoris':'Ajouter aux favoris');fav.setAttribute('title','Favoris');wrap.appendChild(fav);}
    }
    const shop=document.getElementById('addToShopping'),plan=document.getElementById('addToPlanner'),cook=document.getElementById('startCooking');
    if(!shop||!plan||!cook)return;
