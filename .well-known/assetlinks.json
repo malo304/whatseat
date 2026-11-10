@@ -7,7 +7,8 @@
       "namespace": "android_app",
       "package_name": "fr.whatseat.app",
       "sha256_cert_fingerprints": [
-        "BD:25:4D:89:DF:84:F2:F6:FF:BD:DA:44:A5:1C:88:5A:02:F4:BA:E8:62:1D:C2:5E:3D:DE:AC:C9:43:B2:AB:BC"
+        "BD:25:4D:89:DF:84:F2:F6:FF:BD:DA:44:A5:1C:88:5A:02:F4:BA:E8:62:1D:C2:5E:3D:DE:AC:C9:43:B2:AB:BC",
+        "D9:76:6B:C0:C9:E9:0D:35:94:4F:5E:30:59:A5:99:63:6C:66:61:64:4E:94:72:4F:80:5A:8C:86:A1:8C:6F:A5"
       ]
     }
   }
