@@ -1,1 +1,0 @@
-V4.5.1 : aucune suppression supplémentaire nécessaire si le dépôt a déjà été nettoyé pour V4.5.0.

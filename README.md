@@ -1,6 +1,6 @@
 # Whats’Eat? V4.5.1 — archive complète nettoyée
 
-Correctifs : champ date de péremption du Frigo harmonisé pour iPhone (libellé visible, taille et couleurs) ; encarts Catalogue HelloFresh et Sauvegarde déplacés juste avant la Zone de réinitialisation.
+Correctifs : champ date de péremption du Frigo harmonisé pour iPhone (libellé visible, taille et couleurs) ; encart Sauvegarde déplacé juste avant la Zone de réinitialisation.
 
 Aucun changement intentionnel aux données, au catalogue de recettes, au splash screen ou aux fonctionnalités existantes. Cache PWA renouvelé pour diffuser les nouveaux fichiers.
 
