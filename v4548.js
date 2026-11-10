@@ -21,7 +21,14 @@
  const produce=(byMonth[new Date().getMonth()+1]||'').split(',').map(norm);
  const nameOf=item=>{if(typeof item==='string')return item;if(!item||typeof item!=='object')return '';try{return typeof splitAmount==='function'?(splitAmount(item).name||item.name||''):(item.name||'')}catch{return item.name||''}};
  const hasIngredient=(name,term)=>(' '+name+' ').includes(' '+term.replace(/-/g,' ')+' ');
+ // V4.5.50 : résultat mémorisé par liste d'ingrédients (la saison ne change pas pendant la session).
+ const seasonCache=new WeakMap();
  function seasonal(r){
+  const key=r&&r.items;
+  if(key&&typeof key==='object'){const hit=seasonCache.get(key);if(hit!==undefined)return hit;const value=seasonalCompute(r);seasonCache.set(key,value);return value}
+  return seasonalCompute(r);
+ }
+ function seasonalCompute(r){
   const ingredients=[...new Set((r.items||[]).map(item=>norm(nameOf(item))).filter(Boolean))];
   const produceIngredients=ingredients.filter(name=>allProduce.some(term=>hasIngredient(name,term)));
   if(produceIngredients.length<2)return false;

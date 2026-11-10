@@ -15,8 +15,10 @@ function esc(s){return decodeText(String(s??'')).replace(/[&<>"']/g,c=>({'&':'&a
 function safeUrl(s){if(typeof s==='string'&&/^data:image\/(?:jpeg|png|webp);base64,[a-z0-9+/=]+$/i.test(s))return s;try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
 function allRecipes(){return [...state.personal.map(r=>({...r,source:'personal'})),...state.remote.map(r=>({...r,source:'hellofresh'}))]}
 function renderChips(){for(const [group,items] of Object.entries(categories)){$(group).innerHTML=items.map(([emoji,name,key])=>{const value=key||name,active=group==='times'?filters.times===value:filters[group].includes(value);return `<button class="chip ${active?'active':''}" data-group="${group}" data-value="${esc(value)}">${emoji} ${esc(name)}</button>`}).join('')}}
-function decodeText(s){const el=document.createElement('textarea');el.innerHTML=String(s??'');return el.value}
-const fold=s=>decodeText(s).toLocaleLowerCase('fr').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+function decodeText(s){s=String(s??'');if(!/[&<\r]/.test(s)&&s.charCodeAt(0)!==10)return s;const el=document.createElement('textarea');el.innerHTML=s;return el.value}
+// V4.5.50 : le résultat de fold() est mémorisé (même texte = même résultat) pour éviter de recalculer le catalogue entier à chaque affichage.
+const foldCache=new Map();
+const fold=s=>{const key=String(s??'');let value=foldCache.get(key);if(value===undefined){value=decodeText(key).toLocaleLowerCase('fr').normalize('NFD').replace(/[\u0300-\u036f]/g,'');if(foldCache.size>100000)foldCache.clear();foldCache.set(key,value)}return value};
 function foodTags(r){const names=(r.items||[]).map(x=>fold(x.name)).join(' '),title=fold(r.title),hay=title+' '+names;
  const meat=/\b(poulet|boeuf|bœuf|veau|porc|jambon|lardons?|bacon|chorizo|sauciss(?:e|on)|dinde|canard|agneau|steak|viande|pancetta|merguez)\b/.test(hay);
  const fish=/\b(saumon|thon|cabillaud|colin|crevette|poisson|truite|merlu|lieu noir|tilapia|calamar|moule|fruits de mer|anchois|sardine)\b/.test(hay);
